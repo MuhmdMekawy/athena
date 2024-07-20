@@ -1,0 +1,78 @@
+:root {
+  --color-h1-wisdom:#4EA7FF;
+  --color-h6-wisdom:#002E5A;
+}
+
+.athena-wisdom {
+  margin: 60px 0 165px;
+  padding: 47px 30px 30px;
+  text-align: center;
+  -webkit-box-shadow: 0 0 20px rgba(78, 167, 255, 0.3019607843);
+          box-shadow: 0 0 20px rgba(78, 167, 255, 0.3019607843);
+  position: relative;
+}
+.athena-wisdom h1 {
+  font-size: 40px;
+  font-weight: 700;
+  margin-bottom: 0;
+  color: var(--color-h1-wisdom);
+}
+.athena-wisdom h6 {
+  position: absolute;
+  right: 0;
+  bottom: -19px;
+  font-size: 10px;
+  font-weight: 300;
+  margin-bottom: 0;
+  color: var(--color-h6-wisdom);
+}
+.athena-wisdom h6 b {
+  font-weight: 900;
+}
+.athena-wisdom::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 17px;
+  border-radius: 12px 12px 0 0;
+  background: linear-gradient(270.15deg, #33F3FF 0.12%, #8987FF 47.91%, #B843FF 99.87%);
+}
+@media (max-width: 1400px) {
+  .athena-wisdom h1 {
+    font-size: 35px;
+  }
+}
+@media (max-width: 1200px) {
+  .athena-wisdom h1 {
+    font-size: 30px;
+  }
+}
+@media (max-width: 991px) {
+  .athena-wisdom h1 {
+    font-size: 20px;
+  }
+}
+@media (max-width: 767px) {
+  .athena-wisdom {
+    padding: 32px 20px 18px;
+    margin: 50px 0 90px;
+  }
+  .athena-wisdom h1 {
+    font-size: 16px;
+    line-height: 1.6;
+  }
+  .athena-wisdom h6 {
+    bottom: -25px;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+    width: 100%;
+  }
+}
+@media (max-width: 500px) {
+  .athena-wisdom h1 {
+    font-size: 16px;
+  }
+}

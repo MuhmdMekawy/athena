@@ -1,0 +1,1065 @@
+:root {
+  --std-shadow:5px 5px 22px 1px #4EA7FF4D;
+  --input-background:#E8F3FF;
+  --path-svg: #fff;
+  --eye-icon-right-position:-18px;
+}
+
+.student-homepage {
+  margin-bottom: 232px;
+}
+.student-homepage .alert {
+  margin: 20px 0 !important;
+}
+.student-homepage .head-exam {
+  margin-bottom: 48px;
+}
+.student-homepage .head-exam .backHome {
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  border-radius: 6px;
+  overflow: hidden;
+}
+.student-homepage .head-exam .backHome button {
+  border: 2px dashed var(--text-in-light-dark);
+  max-width: 255px;
+  width: 100%;
+  padding: 8px 26px;
+}
+.student-homepage .head-exam .backHome:hover {
+  background: #4EA7FF;
+  -webkit-text-fill-color: #fff;
+}
+.student-homepage .head-exam .backHome:hover button {
+  border: none;
+}
+@media (max-width: 767px) {
+  .student-homepage .head-exam h1 {
+    font-size: 23px;
+  }
+  .student-homepage .head-exam .backHome button {
+    max-width: 160px;
+    padding: 8px 16px;
+  }
+}
+@media (max-width: 400px) {
+  .student-homepage .head-exam {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: start;
+    gap: 20px;
+  }
+  .student-homepage .head-exam .backHome {
+    max-width: unset;
+    width: 100%;
+  }
+  .student-homepage .head-exam .backHome button {
+    max-width: unset;
+    width: 100%;
+  }
+}
+.student-homepage .content {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1.8fr 50px 1fr;
+  grid-template-columns: 1.8fr 1fr;
+  gap: 50px;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+.student-homepage .content .account-control {
+  padding: 56px 55px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 49px 1fr 49px 1fr;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 49px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 20px;
+  border: 2px dashed var(--text-in-light-dark);
+  color: var(--text-in-light-dark);
+}
+.student-homepage .content .account-control svg {
+  fill: var(--text-in-light-dark);
+}
+.student-homepage .content .account-control svg path {
+  fill: var(--text-in-light-dark);
+}
+.student-homepage .content .account-control .cont {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 23px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-transition: 0.6s;
+  transition: 0.6s;
+}
+.student-homepage .content .account-control .cont:hover svg, .student-homepage .content .account-control .cont:hover svg path {
+  background: #4EA7FF;
+  fill: #fff;
+}
+.student-homepage .content .account-control .cont p {
+  color: var(--text-in-light-dark);
+  margin-bottom: 0;
+  font-size: 25px;
+  font-weight: 600;
+}
+.student-homepage .content .account-control .cont svg {
+  fill: var(--text-in-light-dark);
+  width: 174px;
+  height: 174px;
+  border-radius: 50%;
+  border: 1px solid var(--text-in-light-dark);
+  padding: 42px;
+}
+.student-homepage .content .account-control .cont svg path {
+  fill: var(--text-in-light-dark);
+}
+.student-homepage .content .right {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 32px;
+}
+.student-homepage .content .right .std-info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  gap: 28px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: transparent;
+  -webkit-box-shadow: var(--std-shadow);
+          box-shadow: var(--std-shadow);
+  padding: 28px 27px;
+  border-radius: 12px;
+}
+.student-homepage .content .right .std-info .image {
+  width: 240px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+@media (max-width: 1400px) {
+  .student-homepage .content .right .std-info .image {
+    width: 140px;
+  }
+}
+@media (min-width: 767px) and (max-width: 1200px) {
+  .student-homepage .content .right .std-info .image {
+    width: 180px;
+  }
+}
+.student-homepage .content .right .std-info .image img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+}
+.student-homepage .content .right .std-info .text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 14px;
+  width: 100%;
+}
+.student-homepage .content .right .std-info .text h1 {
+  padding: 17px 14px;
+  font-size: 25px;
+  font-weight: 600;
+  margin: 0;
+  background: linear-gradient(84.3deg, #1C8EFF 4.54%, #6DB7FF 100%);
+  color: #fff;
+  border-radius: 10px;
+  text-align: center;
+}
+.student-homepage .content .right .std-info .text h3 {
+  font-size: 14px;
+  font-weight: 600;
+  margin-bottom: 0;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  background: transparent;
+  color: var(--text-in-light-dark);
+  -webkit-box-shadow: 0px 0px 7px 0px rgba(78, 167, 255, 0.2509803922);
+          box-shadow: 0px 0px 7px 0px rgba(78, 167, 255, 0.2509803922);
+  border-radius: 7px;
+  text-align: center;
+  padding: 10px;
+}
+.student-homepage .content .right .student-tabs {
+  width: 100%;
+}
+.student-homepage .content .right .student-tabs .tab1, .student-homepage .content .right .student-tabs .tab2 {
+  -webkit-box-shadow: var(--std-shadow);
+          box-shadow: var(--std-shadow);
+}
+.student-homepage .content .right .student-tabs .tab2 + h6 {
+  margin-bottom: 0;
+  font-size: 10px;
+  font-weight: 400;
+  color: var(--text-in-light-dark);
+  text-align: end;
+  width: 100%;
+}
+@media (max-width: 1400px) {
+  .student-homepage .content {
+    gap: 20px;
+  }
+  .student-homepage .content .right {
+    gap: 16px;
+  }
+  .student-homepage .content .right .std-info {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .student-homepage .content .right .student-tabs {
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+  .student-homepage .content .right .student-tabs .tab1 {
+    gap: 30px;
+    width: 100%;
+  }
+  .student-homepage .content .right .student-tabs .tab1 p {
+    font-size: 30px;
+  }
+  .student-homepage .content .right .student-tabs .tab1 svg {
+    width: 40px;
+  }
+  .student-homepage .content .right .student-tabs .tab1 h3 {
+    font-size: 18px;
+  }
+  .student-homepage .content .right .student-tabs .tab2 {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    gap: 15px;
+    width: 100%;
+  }
+}
+@media (max-width: 1200px) {
+  .student-homepage .content {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+    gap: 40px;
+  }
+  .student-homepage .content .right {
+    width: 100%;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    gap: 16px;
+  }
+  .student-homepage .content .right .std-info {
+    width: 100%;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  .student-homepage .content .right .std-info .text h1 {
+    font-size: 20px;
+  }
+  .student-homepage .content .right .student-tabs {
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+  .student-homepage .content .right .student-tabs .tab1 {
+    gap: 30px;
+    width: 100%;
+  }
+  .student-homepage .content .right .student-tabs .tab1 p {
+    font-size: 30px;
+  }
+  .student-homepage .content .right .student-tabs .tab1 svg {
+    width: 40px;
+  }
+  .student-homepage .content .right .student-tabs .tab1 h3 {
+    font-size: 18px;
+  }
+  .student-homepage .content .right .student-tabs .tab2 {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    gap: 15px;
+    width: 100%;
+  }
+  .student-homepage .content .right .student-tabs .tab2 .code {
+    min-width: 240px;
+    min-height: 60px;
+  }
+  .student-homepage .content .account-control {
+    width: 100%;
+  }
+}
+@media (max-width: 991px) {
+  .student-homepage .content .right {
+    width: 100%;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    gap: 16px;
+  }
+  .student-homepage .content .right .std-info {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    max-width: 270px;
+  }
+  .student-homepage .content .right .std-info .text h1 {
+    font-size: 20px;
+  }
+}
+@media (max-width: 767px) {
+  .student-homepage .content .right {
+    width: 100%;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 16px;
+  }
+  .student-homepage .content .right .std-info {
+    max-width: unset;
+    width: 100%;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    max-width: unset;
+    width: 100%;
+  }
+  .student-homepage .content .right .std-info .text {
+    width: 100%;
+  }
+  .student-homepage .content .right .std-info .text h1 {
+    font-size: 20px;
+  }
+  .student-homepage .content .right .std-info .text h3 {
+    width: 100%;
+  }
+  .student-homepage .content .right .std-info .image {
+    width: 200px !important;
+  }
+  .student-homepage .content .account-control {
+    -ms-grid-columns: (1fr)[2];
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (max-width: 560px) {
+  .student-homepage .content .right {
+    width: 100%;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 16px;
+  }
+  .student-homepage .content .right .std-info .text h1 {
+    font-size: 20px;
+  }
+  .student-homepage .content .right .std-info .image {
+    width: 170px !important;
+  }
+  .student-homepage .content .account-control {
+    -ms-grid-columns: 1fr 15px 1fr 15px 1fr;
+    grid-template-columns: repeat(3, 1fr);
+    padding: 15px 10px;
+    gap: 15px;
+  }
+  .student-homepage .content .account-control .cont svg {
+    width: 100px;
+    height: 100px;
+    padding: 25px;
+  }
+  .student-homepage .content .account-control .cont p {
+    font-size: 18px;
+  }
+}
+@media (max-width: 500px) {
+  .student-homepage .content .right {
+    width: 100%;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 16px;
+  }
+  .student-homepage .content .right .std-info {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .student-homepage .content .right .std-info .text h1 {
+    font-size: 20px;
+  }
+  .student-homepage .content .right .student-tabs .tab1 {
+    gap: 10px;
+  }
+  .student-homepage .content .right .student-tabs .tab2 {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    gap: 20px;
+  }
+  .student-homepage .content .right .student-tabs .tab2 span {
+    font-size: 20px;
+  }
+  .student-homepage .content .account-control {
+    -ms-grid-columns: 1fr 30px 1fr;
+    grid-template-columns: repeat(2, 1fr);
+    padding: 15px 10px;
+    gap: 30px;
+  }
+  .student-homepage .content .account-control .cont svg {
+    width: 100px;
+    height: 100px;
+    padding: 25px;
+  }
+  .student-homepage .content .account-control .cont p {
+    font-size: 18px;
+  }
+}
+@media (max-width: 450px) {
+  .student-homepage .content .right .std-info {
+    margin: 0 auto;
+  }
+  .student-homepage .content .right .student-tabs .tab2 {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .student-homepage .content .account-control {
+    -ms-grid-columns: 1fr 30px 1fr;
+    grid-template-columns: repeat(2, 1fr);
+    padding: 15px 10px;
+    gap: 30px;
+  }
+  .student-homepage .content .account-control .cont svg {
+    width: 100px;
+    height: 100px;
+    padding: 25px;
+  }
+  .student-homepage .content .account-control .cont p {
+    font-size: 18px;
+  }
+}
+.student-homepage .header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+}
+.student-homepage .header .dark-editIcon {
+  fill: var(--path-svg) !important;
+}
+.student-homepage .header h1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  gap: 16px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 0;
+}
+.student-homepage .header h1 span {
+  font-size: 40px;
+  font-weight: 700;
+}
+.student-homepage .header + h4 {
+  margin: 64px 0 32px;
+  font-size: 20px;
+  font-weight: 400;
+}
+.student-homepage .header .links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  gap: 13px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+@media (max-width: 767px) {
+  .student-homepage .header h1 span {
+    font-size: 28px;
+  }
+  .student-homepage .header + h4 {
+    margin: 30px 0 20px;
+  }
+}
+@media (max-width: 500px) {
+  .student-homepage .header h1 svg {
+    width: 20px;
+    height: 20px;
+  }
+  .student-homepage .header h1 span {
+    font-size: 20px;
+  }
+  .student-homepage .header + h4 {
+    font-size: 16px;
+  }
+  .student-homepage .header .arrow-back svg, .student-homepage .header button svg {
+    width: 35px;
+    height: 35px;
+  }
+}
+@media (max-width: 400px) {
+  .student-homepage .header h1 {
+    gap: 8px;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
+  }
+  .student-homepage .header h1 span {
+    font-size: 16px;
+  }
+}
+.student-homepage.image-control .content {
+  -ms-grid-columns: 1.5fr 1fr;
+  grid-template-columns: 1.5fr 1fr;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+.student-homepage.image-control .account-control {
+  display: initial;
+}
+.student-homepage.image-control .account-control .image {
+  width: 150px;
+  height: 150px;
+  border-radius: 5px;
+  -webkit-box-shadow: 0px 0px 5px 0px rgba(78, 167, 255, 0.2509803922);
+          box-shadow: 0px 0px 5px 0px rgba(78, 167, 255, 0.2509803922);
+  overflow: hidden;
+  position: relative;
+  border: 2px solid var(--text-in-light-dark);
+  cursor: pointer;
+}
+.student-homepage.image-control .account-control .image:hover .edit-icon {
+  display: block;
+}
+.student-homepage.image-control .account-control .image .std-img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+}
+.student-homepage.image-control .account-control .image .edit-icon {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  padding: 35px;
+  z-index: 3;
+  background: rgba(0, 31, 62, 0.5098039216);
+  display: none;
+}
+.student-homepage.image-control .account-control ul {
+  margin: 25px 0 !important;
+  list-style: initial;
+}
+.student-homepage.image-control .account-control ul li {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+}
+@media (max-width: 500px) {
+  .student-homepage.image-control .account-control ul li {
+    font-size: 12px;
+  }
+}
+@media (max-width: 400px) {
+  .student-homepage.image-control .account-control ul li {
+    font-size: 9px;
+  }
+}
+.student-homepage.image-control .account-control button {
+  background: transparent;
+  max-width: 167px;
+}
+.student-homepage.image-control .account-control h6 {
+  margin-top: 24px;
+  font-size: 14px;
+  font-weight: 600;
+  margin-bottom: 0;
+}
+.student-homepage.image-control .account-control h6 a {
+  font-weight: 800;
+  text-decoration: underline !important;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+.student-homepage.image-control .account-control h6 a:hover {
+  text-decoration: line-through !important;
+}
+@media (max-width: 400px) {
+  .student-homepage.image-control .account-control h6 {
+    font-size: 14px;
+    padding-bottom: 25px;
+  }
+}
+.student-homepage.personal-details .content {
+  -ms-grid-columns: 1.5fr 1fr;
+  grid-template-columns: 1.5fr 1fr;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+.student-homepage.personal-details .content .account-control {
+  display: initial;
+}
+.student-homepage.personal-details .content .account-control .personal-content {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 20px 1fr;
+  grid-template-columns: repeat(2, 1fr);
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  gap: 20px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 62px;
+  margin-bottom: 75px;
+}
+.student-homepage.personal-details .content .account-control .personal-content .left-inputs {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 44px;
+}
+.student-homepage.personal-details .content .account-control .personal-content .left-inputs .input {
+  max-width: 255px;
+  width: 100%;
+}
+.student-homepage.personal-details .content .account-control .personal-content .left-inputs .input label {
+  font-size: 14px;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+.student-homepage.personal-details .content .account-control .personal-content .left-inputs .input input, .student-homepage.personal-details .content .account-control .personal-content .left-inputs .input select {
+  width: 100%;
+  height: 46px;
+  border-radius: 7px;
+  font-size: 14px;
+  font-weight: 700;
+  padding: 0 16px;
+  outline: none;
+  border: 2px solid var(--text-in-light-dark);
+  color: var(--text-in-light-dark);
+  background: var(--input-background);
+}
+.student-homepage.personal-details .content .account-control .personal-content .left-inputs .input input option, .student-homepage.personal-details .content .account-control .personal-content .left-inputs .input select option {
+  background: rgb(0, 28, 55);
+  color: #fff;
+}
+.student-homepage.personal-details .content .account-control .personal-content .left-inputs .input input[type=date]::-webkit-calendar-picker-indicator, .student-homepage.personal-details .content .account-control .personal-content .left-inputs .input select[type=date]::-webkit-calendar-picker-indicator {
+  opacity: 1;
+  display: block;
+  background: url("../../../images/uiw_date.svg") no-repeat;
+  width: 20px;
+  height: 20px;
+  border-width: thin;
+  cursor: pointer;
+}
+.student-homepage.personal-details .content .account-control .personal-content .left-inputs .input input[type=radio], .student-homepage.personal-details .content .account-control .personal-content .left-inputs .input select[type=radio] {
+  max-width: 10px;
+  background: transparent;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  margin: 0 8px;
+}
+.student-homepage.personal-details .content .account-control .personal-content .left-inputs .input input[type=radio] + label, .student-homepage.personal-details .content .account-control .personal-content .left-inputs .input select[type=radio] + label {
+  cursor: pointer;
+}
+.student-homepage.personal-details .content .account-control .personal-content .left-inputs .input input[type=radio]:checked + label img, .student-homepage.personal-details .content .account-control .personal-content .left-inputs .input select[type=radio]:checked + label img {
+  -webkit-filter: brightness(0.5);
+          filter: brightness(0.5);
+}
+.student-homepage.personal-details .content .account-control .personal-content + p {
+  margin-bottom: 10px;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+}
+@media (max-width: 767px) {
+  .student-homepage.personal-details .content .account-control .personal-content + p {
+    font-size: 10px;
+  }
+}
+@media (max-width: 400px) {
+  .student-homepage.personal-details .content .account-control .personal-content + p {
+    font-size: 8px;
+  }
+}
+@media (max-width: 767px) {
+  .student-homepage.personal-details .content .account-control .personal-content {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 20px;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    margin-bottom: 50px;
+  }
+  .student-homepage.personal-details .content .account-control .personal-content .left-inputs {
+    gap: 20px;
+  }
+}
+.student-homepage.personal-details .content .account-control h6 {
+  margin-top: 24px;
+  font-size: 14px;
+  font-weight: 600;
+  margin-bottom: 0;
+}
+.student-homepage.personal-details .content .account-control h6 a {
+  font-weight: 800;
+  text-decoration: underline !important;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+.student-homepage.personal-details .content .account-control h6 a:hover {
+  text-decoration: line-through !important;
+}
+@media (max-width: 400px) {
+  .student-homepage.personal-details .content .account-control h6 {
+    font-size: 14px;
+    padding-bottom: 25px;
+  }
+}
+.student-homepage.parent-details .content .account-control .personal-content {
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: start;
+}
+.student-homepage.settings-control .content .account-control .personal-content {
+  margin-bottom: 32px;
+}
+@media (max-width: 767px) {
+  .student-homepage.settings-control .content .account-control .personal-content {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+}
+.student-homepage.settings-control .content .control-theme-lang h3 {
+  font-size: 14px;
+  font-weight: 700;
+  margin-bottom: 19px;
+  color: var(--text-in-light-dark);
+}
+.student-homepage.settings-control .content .control-theme-lang .lightBtn path {
+  fill: #fff !important;
+}
+.student-homepage.settings-control .content .control-theme-lang .buttons select {
+  color: var(--text-in-light-dark);
+  border: 1px solid var(--text-in-light-dark);
+}
+.student-homepage.settings-control .content .control-theme-lang .buttons select option {
+  background: transparent;
+  color: #4EA7FF;
+}
+.student-homepage.settings-control .content .pass-buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 32px;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: start;
+  margin-bottom: 151px;
+}
+.student-homepage.settings-control .content .pass-buttons button {
+  max-width: 255px;
+  width: 100%;
+  height: 46px;
+  border-radius: 6px;
+  overflow: hidden;
+}
+.student-homepage.settings-control .content .pass-buttons button.updatePass {
+  background: #4EA7FF;
+  color: #fff;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+.student-homepage.settings-control .content .pass-buttons button.updatePass:hover {
+  background: #fff;
+  color: #4EA7FF;
+  border: 1px solid var(--text-in-light-dark);
+}
+.student-homepage.settings-control .content .pass-buttons button.deleteAccount {
+  background: #AE0000;
+  color: #fff;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+.student-homepage.settings-control .content .pass-buttons button.deleteAccount:hover {
+  background: #fff;
+  color: #AE0000;
+  border: 1px solid #AE0000;
+}
+.student-homepage.settings-control .content .passwords {
+  margin-top: 6px;
+  margin-bottom: 52px;
+}
+.student-homepage.settings-control .content .passwords .newPasswords {
+  margin-top: 38px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[2];
+  grid-template-columns: repeat(2, 1fr);
+}
+@media (max-width: 767px) {
+  .student-homepage.settings-control .content .passwords .newPasswords {
+    -ms-grid-columns: (1fr)[1];
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+.student-homepage.settings-control .content .passwords .input {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 5px;
+  max-width: 255px;
+  width: 100%;
+  position: relative;
+}
+.student-homepage.settings-control .content .passwords .input label {
+  font-size: 14px;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+.student-homepage.settings-control .content .passwords .input input {
+  width: 100%;
+  height: 46px;
+  border-radius: 7px;
+  font-size: 14px;
+  font-weight: 700;
+  padding: 0 16px;
+  outline: none;
+  border: 2px solid var(--text-in-light-dark);
+  color: var(--text-in-light-dark);
+  background: var(--input-background);
+}
+.student-homepage.settings-control .content .passwords .input input::-webkit-input-placeholder {
+  color: var(--text-in-light-dark);
+}
+.student-homepage.settings-control .content .passwords .input input::-moz-placeholder {
+  color: var(--text-in-light-dark);
+}
+.student-homepage.settings-control .content .passwords .input input:-ms-input-placeholder {
+  color: var(--text-in-light-dark);
+}
+.student-homepage.settings-control .content .passwords .input input::-ms-input-placeholder {
+  color: var(--text-in-light-dark);
+}
+.student-homepage.settings-control .content .passwords .input input::placeholder {
+  color: var(--text-in-light-dark);
+}
+.student-homepage.settings-control .content .passwords .input img {
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  right: var(--eye-icon-right-position);
+  left: var(--eye-icon-left-position);
+  top: 50px;
+  cursor: pointer;
+}
+.student-homepage .submitBtn {
+  background: transparent;
+  color: var(--text-in-light-dark);
+  border: 1px solid var(--text-in-light-dark);
+}
+
+.delete-Acc-popup {
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  width: 100%;
+  z-index: 99;
+  max-width: 800px;
+  margin: 0 auto;
+  border-radius: 20px;
+  -webkit-box-shadow: 0 0 5px #000;
+          box-shadow: 0 0 5px #000;
+  overflow: hidden;
+}
+.delete-Acc-popup .head-popup {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 15px;
+  background: linear-gradient(84.3deg, #1C8EFF 4.54%, #6DB7FF 100%);
+  color: #fff;
+  padding: 35px 34px 24px;
+}
+.delete-Acc-popup .body-content {
+  background: #fff;
+  padding: 35px;
+}
+.delete-Acc-popup .body-content p {
+  color: #4EA7FF;
+  font-size: 14px;
+  font-weight: 500;
+}
+.delete-Acc-popup .body-content .input {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 5px;
+  max-width: 255px;
+  width: 100%;
+  position: relative;
+  margin-bottom: 26px;
+}
+.delete-Acc-popup .body-content .input label {
+  font-size: 14px;
+  font-weight: 700;
+  margin-bottom: 10px;
+  color: #4EA7FF;
+}
+.delete-Acc-popup .body-content .input input {
+  width: 100%;
+  height: 46px;
+  border-radius: 7px;
+  font-size: 14px;
+  font-weight: 700;
+  padding: 0 16px;
+  outline: none;
+  border: 1px solid rgba(78, 167, 255, 0.3490196078);
+  color: #4EA7FF;
+  background: -webkit-gradient(linear, left bottom, left top, from(rgba(162, 209, 255, 0.368627451)), to(rgba(162, 209, 255, 0.4509803922))), -webkit-gradient(linear, left bottom, left top, from(#F2F9FF), to(rgba(242, 249, 255, 0.5607843137)));
+  background: linear-gradient(0deg, rgba(162, 209, 255, 0.368627451), rgba(162, 209, 255, 0.4509803922)), linear-gradient(0deg, #F2F9FF, rgba(242, 249, 255, 0.5607843137));
+  -webkit-box-shadow: 0px 0px 5px 0px rgba(78, 167, 255, 0.2509803922);
+          box-shadow: 0px 0px 5px 0px rgba(78, 167, 255, 0.2509803922);
+}
+.delete-Acc-popup .body-content button {
+  max-width: 255px;
+  width: 100%;
+  height: 46px;
+  border-radius: 6px;
+  overflow: hidden;
+}
+.delete-Acc-popup .body-content button.deleteAccount {
+  background: #AE0000;
+  color: #fff;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+.delete-Acc-popup .body-content button.deleteAccount:hover {
+  background: #fff;
+  color: #AE0000;
+  border: 1px solid #AE0000;
+}

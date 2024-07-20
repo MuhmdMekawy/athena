@@ -1,0 +1,103 @@
+// ---------------------------------------------------------------------------------------------
+// ------------------------------------finish signup--------------------------------------------
+// ---------------------------------------------------------------------------------------------
+.finishSignUp{
+  text-align: center;
+  position: relative;
+  z-index: 5;
+  overflow: hidden !important;
+  video{
+    position: absolute;
+    right: 0px;
+    top: 0;
+    width: fit-content;
+    height: 100%;
+    object-fit: contain;
+    z-index: -1;
+    display: none;
+  }
+  .SignUpNavbar{
+    .container{
+      justify-content: center;
+    }
+  }
+  .content{
+    color: var(--text-in-light-dark);
+    .icon{
+      max-width:46px;
+      margin: 0 auto;
+      svg{
+        width: 100%;
+        height: 100%;
+        fill: var(--text-in-light-dark);
+      }
+    }
+    h1{
+      margin: 45px 0 19px;
+      font-size: 50px;
+      font-weight: 700;
+    }
+    h3{
+      font-size: 20px;
+      font-weight: 400;
+      margin-bottom: 89px;
+    }
+    .code{
+      display: flex;
+      flex-direction:column;
+      gap: 10px;
+      justify-content: center;
+      text-align: start !important;
+      width: fit-content;
+      margin: 0 auto;
+      h6{
+        margin-bottom: 0;
+        font-size: 14px;
+        font-weight: 700;
+      }
+      h5{
+        background: transparent;
+        border: 1px solid var(--text-in-light-dark);
+        border-radius: 7px;
+        width: 255px;
+        text-align: center;
+        padding: 17px;
+        font-size: 40px;
+        font-weight: 700;
+      }
+      p{
+        font-size: 12px;
+        font-weight: 700;
+      }
+    }
+    .submitBtn{
+      margin: 73px 0 0px;
+      background: #4EA7FF;
+      margin-bottom: 50px;
+      &::before
+      ,&::after{
+        background: #4EA7FF;
+      }
+      &:hover{
+        color: #4EA7FF;
+        border: 1px solid #4EA7FF;
+        &::before
+        ,&::after{
+          background: #fff;
+        }
+      }
+      .footer{
+        margin-top: 50px;
+      }
+    }
+    @media (max-width : 500px){
+      .icon{
+        max-width: 38px;
+      }
+      h1{
+        font-size: 38px;
+        margin:36px 0  ;
+      }
+    }
+  }
+}

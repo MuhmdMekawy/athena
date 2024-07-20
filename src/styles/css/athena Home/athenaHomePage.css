@@ -1,0 +1,417 @@
+.student-tabs {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 22px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 461px;
+}
+@media (max-width: 767px) {
+  .student-tabs {
+    width: 100%;
+  }
+}
+.student-tabs .tab1 {
+  width: 100%;
+  height: 93px;
+  background: linear-gradient(90.15deg, #33F3FF 0.13%, #8987FF 47.92%, #B843FF 99.87%);
+  -webkit-box-shadow: var(--athenahome-image-boxShadow);
+          box-shadow: var(--athenahome-image-boxShadow);
+  border-radius: 12px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  gap: 5px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 11px 24px;
+  color: #fff;
+}
+.student-tabs .tab1 h3 {
+  font-size: 25px;
+  font-weight: 600;
+  margin-bottom: 0;
+}
+.student-tabs .tab1 .numb {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  gap: 11px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.student-tabs .tab1 .numb p {
+  margin-bottom: 0;
+  font-size: 40px;
+  font-weight: 600;
+}
+@media (max-width: 1200px) {
+  .student-tabs .tab1 .numb p {
+    font-size: 24px;
+  }
+}
+.student-tabs .tab1 .numb .icon svg {
+  width: 69px;
+  height: 71px;
+}
+@media (max-width: 1200px) {
+  .student-tabs .tab1 .numb .icon svg {
+    width: 30px;
+  }
+}
+.student-tabs .tab2 {
+  width: 100%;
+  padding: 18px 27px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  gap: 15px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: var(--athenahome-elemnts-background);
+  -webkit-box-shadow: var(--athenahome-image-boxShadow);
+          box-shadow: var(--athenahome-image-boxShadow);
+  color: var(--text-in-light-dark);
+  border-radius: 12px;
+}
+.student-tabs .tab2 span {
+  font-size: 20px;
+  font-weight: 700;
+}
+.student-tabs .tab2 .code {
+  margin-bottom: 0;
+  text-align: center;
+  z-index: -1;
+  border-radius: 7px;
+  position: relative;
+  z-index: 3;
+  width: 240px;
+  background: var(--athenahome-code-background);
+  border: 2px dashed #4EA7FF;
+}
+@media (max-width: 1200px) {
+  .student-tabs .tab2 .code {
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+    padding: 8px;
+  }
+}
+@media (max-width: 767px) {
+  .student-tabs .tab2 .code {
+    width: 100%;
+  }
+}
+.student-tabs .tab2 .code p {
+  font-size: 40px;
+  font-weight: 600;
+  margin-bottom: 0;
+}
+@media (max-width: 1200px) {
+  .student-tabs .tab2 .code p {
+    font-size: 28px;
+  }
+}
+@media (max-width: 1200px) {
+  .student-tabs .tab2 {
+    padding: 18px;
+  }
+  .student-tabs .tab2 span {
+    font-size: 18px;
+  }
+}
+@media (max-width: 600px) {
+  .student-tabs .tab1, .student-tabs .tab2 {
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+    gap: 8px;
+  }
+  .student-tabs .tab1 h3, .student-tabs .tab2 h3 {
+    font-size: 14px;
+  }
+  .student-tabs .tab1 .numb .icon svg, .student-tabs .tab2 .numb .icon svg {
+    width: 47px;
+  }
+  .student-tabs .tab1 .numb p, .student-tabs .tab2 .numb p {
+    font-size: 25px;
+  }
+  .student-tabs .tab1 span, .student-tabs .tab2 span {
+    font-size: 14px;
+  }
+  .student-tabs .tab1 .code, .student-tabs .tab2 .code {
+    width: 157px;
+  }
+  .student-tabs .tab1 .code p, .student-tabs .tab2 .code p {
+    font-size: 25px;
+    padding: 10px 0;
+  }
+}
+@media (max-width: 400px) {
+  .student-tabs .tab1, .student-tabs .tab2 {
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+    gap: 8px;
+  }
+  .student-tabs .tab1 .numb .icon svg, .student-tabs .tab2 .numb .icon svg {
+    width: 47px;
+  }
+  .student-tabs .tab1 .numb p, .student-tabs .tab2 .numb p {
+    font-size: 25px;
+  }
+  .student-tabs .tab1 span, .student-tabs .tab2 span {
+    font-size: 12px;
+  }
+  .student-tabs .tab1 .code, .student-tabs .tab2 .code {
+    width: 145px;
+  }
+  .student-tabs .tab1 .code p, .student-tabs .tab2 .code p {
+    font-size: 25px;
+    padding: 10px 0;
+  }
+}
+
+.athena-homepage {
+  color: #4EA7FF;
+}
+.athena-homepage .content .first-sec {
+  padding-top: 58px;
+}
+.athena-homepage .content .first-sec h1 {
+  font-size: 40px;
+  font-weight: 600;
+  margin-bottom: 44px;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  background: linear-gradient(90.15deg, #33F3FF 0.13%, #8987FF 49.48%, #B843FF 99.87%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+.athena-homepage .content .first-sec .cont {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  gap: 36px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+}
+.athena-homepage .content .first-sec .cont .image {
+  background: var(--athenahome-elemnts-background);
+  -webkit-box-shadow: var(--athenahome-image-boxShadow);
+          box-shadow: var(--athenahome-image-boxShadow);
+  border-radius: 20px;
+  width: 214px;
+  height: 214px;
+  margin: 0 auto;
+  position: relative;
+  padding: 28px 30px;
+}
+.athena-homepage .content .first-sec .cont .image img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+  border: 2px solid transparent;
+  background: linear-gradient(90.15deg, #33F3FF 0.13%, #8987FF 49.48%, #B843FF 99.87%) border-box; /*3*/
+  -webkit-filter: drop-shadow(0px 0px 5px rgba(78, 167, 255, 0.25));
+          filter: drop-shadow(0px 0px 5px rgba(78, 167, 255, 0.25));
+  border-radius: 112.5px;
+}
+.athena-homepage .content .first-sec .cont .card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  gap: 31px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 31px 59px;
+  max-width: 496px;
+  border: none;
+  background: var(--athenahome-elemnts-background);
+  -webkit-box-shadow: var(--athenahome-image-boxShadow);
+          box-shadow: var(--athenahome-image-boxShadow);
+  border-radius: 12px;
+  height: 208px;
+}
+@media (max-width: 991px) {
+  .athena-homepage .content .first-sec .cont .card {
+    max-width: unset;
+    width: 100%;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+.athena-homepage .content .first-sec .cont .card .icon {
+  max-width: 110px;
+}
+.athena-homepage .content .first-sec .cont .card .text h4 {
+  font-size: 25px;
+  font-weight: 700;
+  margin-bottom: 10px;
+  background: linear-gradient(90.15deg, #33F3FF 0.13%, #8987FF 49.48%, #B843FF 99.87%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+.athena-homepage .content .first-sec .cont .card .text h5 {
+  color: var(--athenahome-themes-text) !important;
+  font-size: 14px;
+  font-weight: 400;
+  margin-bottom: 16px;
+  max-width: 255px;
+}
+.athena-homepage .content .first-sec .cont .card .text .submitBtn {
+  max-width: 180px;
+  margin-bottom: 0;
+}
+@media (max-width: 1200px) {
+  .athena-homepage .content .first-sec .cont .card {
+    padding: 18px 30px;
+  }
+}
+@media (max-width: 1200px) {
+  .athena-homepage .content .first-sec .cont {
+    gap: 12px;
+  }
+  .athena-homepage .content .first-sec .cont .image {
+    margin: 0;
+    height: 214px;
+    padding: 30px;
+  }
+  .athena-homepage .content .first-sec .cont .image img {
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+}
+@media (max-width: 991px) {
+  .athena-homepage .content .first-sec .cont {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    gap: 12px;
+  }
+  .athena-homepage .content .first-sec .cont .image {
+    margin: 0;
+  }
+}
+@media (max-width: 600px) {
+  .athena-homepage .content .first-sec h1 {
+    font-size: 24px;
+    margin-bottom: 27px;
+  }
+  .athena-homepage .content .first-sec .cont {
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    gap: 27px;
+  }
+  .athena-homepage .content .first-sec .cont .card {
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+    padding: 43px 40px;
+    width: 100%;
+  }
+  .athena-homepage .content .first-sec .cont .card .icon {
+    max-width: 89px;
+  }
+  .athena-homepage .content .first-sec .cont .card .text h4 {
+    font-size: 20px;
+  }
+  .athena-homepage .content .first-sec .cont .card .text h5 {
+    font-size: 10px;
+    max-width: 175px;
+    line-height: 1.6;
+  }
+  .athena-homepage .content .first-sec .cont .card .text button {
+    font-size: 20px;
+  }
+}
+@media (max-width: 400px) {
+  .athena-homepage .content .first-sec .cont {
+    gap: 27px;
+  }
+  .athena-homepage .content .first-sec .cont .card {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    text-align: center;
+  }
+  .athena-homepage .content .first-sec .cont .card .icon {
+    max-width: 130px;
+  }
+  .athena-homepage .content .first-sec .cont .card .text h4 {
+    font-size: 25px;
+  }
+  .athena-homepage .content .first-sec .cont .card .text h5 {
+    font-size: 13px;
+    max-width: 250px;
+    line-height: 1.6;
+  }
+  .athena-homepage .content .first-sec .cont .card .text button {
+    font-size: 20px;
+  }
+}
+.athena-homepage .content hr {
+  margin: 69px 0;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(90.15deg, #33F3FF 100%, #8987FF 49.48%, #B843FF 99.87%);
+}
+@media (max-width: 500px) {
+  .athena-homepage .content hr {
+    display: none;
+  }
+}

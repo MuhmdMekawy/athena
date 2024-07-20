@@ -1,0 +1,33 @@
+// ---------------------------------------------------------------------------------------------
+// ----------------------------------------footer-----------------------------------------------
+// ---------------------------------------------------------------------------------------------
+.footer{
+  padding: 40px 0 25px; 
+  position: relative;
+  bottom: 0;
+  left: 0;
+  &::after{
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(89.94deg, #38F3FF 20.13%, #C463FF 77.65%);
+    filter: blur(67px);
+  }
+  .content{
+    text-align: center;
+    small{
+      position: relative;
+      z-index: 2;
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 16px;
+      color: #fff;
+      @media (max-width : 400px) {
+        font-size: 9px;
+      }
+    }
+  }
+}

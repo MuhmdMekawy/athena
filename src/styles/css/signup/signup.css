@@ -1,0 +1,631 @@
+.home .top {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 8px;
+  padding-top: 20px;
+}
+@media (max-width: 600px) {
+  .home .top {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    gap: 30px;
+  }
+}
+.home .top .logo {
+  max-width: 285px;
+}
+.home .top .logo svg {
+  width: 100%;
+}
+.home .bottom {
+  padding: 110px 0 80px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 100%;
+}
+.home .bottom .image {
+  max-width: 420px;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+.home .bottom .details {
+  color: #4EA7FF;
+}
+.home .bottom .details h5 {
+  font-weight: 700;
+  font-size: 25px;
+  margin-bottom: 0;
+}
+.home .bottom .details h3 {
+  margin: 42px 0 33px;
+  font-size: 60px;
+  background: linear-gradient(90.15deg, #33F3FF 0.13%, #8987FF 49.48%, #B843FF 99.87%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+.home .bottom .details p {
+  font-size: 12px;
+  font-weight: 400;
+  margin-bottom: 88px;
+  max-width: 431px;
+  line-height: 20px;
+}
+.home .bottom .details p a {
+  text-decoration: underline !important;
+}
+.home .bottom .details .signup_button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  gap: 20px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.home .bottom .details .signup_button button {
+  background: #4EA7FF;
+  border-radius: 6px;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 22px;
+  color: #E8F3FF;
+  width: 255px;
+  height: 46px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+  border: 1px solid #4EA7FF;
+}
+.home .bottom .details .signup_button button::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 0;
+  height: 100%;
+  background-color: #1C8EFF;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  z-index: -1;
+}
+.home .bottom .details .signup_button button::before {
+  content: "";
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  width: 0;
+  height: 100%;
+  background-color: #1C8EFF;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  z-index: -1;
+}
+.home .bottom .details .signup_button button:hover {
+  color: #4EA7FF;
+}
+.home .bottom .details .signup_button button:hover::after {
+  width: 50%;
+  background-color: #fff;
+}
+.home .bottom .details .signup_button button:hover::before {
+  width: 50%;
+  background-color: #fff;
+}
+.home .bottom .details .signup_button h6 {
+  font-size: 14px;
+  font-weight: 400;
+  margin-bottom: 0;
+}
+.home .bottom .details .signup_button h6 a {
+  text-decoration: underline !important;
+  font-weight: 600;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+.home .bottom .details .signup_button h6 a:hover {
+  text-decoration: none !important;
+}
+@media (max-width: 991px) {
+  .home .bottom {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+    padding: 70px 0 40px;
+  }
+  .home .bottom .image {
+    max-width: 350px;
+    margin-bottom: 40px;
+  }
+  .home .bottom .details h3 {
+    margin: 25px 0;
+  }
+  .home .bottom .details p {
+    margin-bottom: 40px;
+  }
+}
+@media (max-width: 500px) {
+  .home .top .image {
+    max-width: 200px;
+  }
+  .home .bottom {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+    padding: 50px 0 30px;
+  }
+  .home .bottom .image {
+    max-width: 300px;
+    margin-bottom: 40px;
+  }
+  .home .bottom .details h5 {
+    font-size: 20px;
+  }
+  .home .bottom .details h3 {
+    margin: 25px 0;
+  }
+  .home .bottom .details p {
+    margin-bottom: 40px;
+  }
+  .home .bottom .details .signup_button {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .home .bottom .details .signup_button h6 {
+    text-align: center;
+  }
+}
+@media (max-width: 400px) {
+  .home .bottom .details h5 {
+    font-size: 20px;
+  }
+  .home .bottom .details h3 {
+    font-size: 38px;
+    margin: 15px 0;
+  }
+  .home .bottom .details p {
+    margin-bottom: 40px;
+  }
+}
+
+.signup .bottom {
+  border-radius: 75px 75px 0px 0px;
+  color: #E8F3FF;
+}
+.signup .bottom .createNewAcc h1 {
+  padding: 62px 0 55px;
+  margin-bottom: 0px;
+  font-size: 40px;
+  font-weight: 700;
+}
+.signup .bottom .createNewAcc h6 {
+  font-size: 20px;
+  font-weight: 400;
+  margin-bottom: 32px;
+}
+.signup .bottom .createNewAcc img {
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.signup .bottom .createNewAcc .alert-danger {
+  max-width: 500px;
+  margin: 20px 0 35px !important;
+  font-size: 14px;
+}
+.signup .bottom .createNewAcc label {
+  max-width: 150px;
+  height: 150px;
+  cursor: pointer;
+}
+.signup .bottom .createNewAcc label + input {
+  display: none;
+}
+.signup .bottom .createNewAcc ul {
+  list-style: disc;
+  margin-top: 25px !important;
+  margin-bottom: 62px !important;
+}
+.signup .bottom .createNewAcc ul li {
+  font-size: 14px;
+  line-height: 20px;
+}
+.signup .bottom .createNewAcc button {
+  width: 255px;
+  height: 46px;
+  border: 1.5px solid #FFFFFF;
+  border-radius: 6px;
+  color: white;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+}
+.signup .bottom .createNewAcc button::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 0;
+  height: 100%;
+  background-color: #1C8EFF;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  z-index: -1;
+}
+.signup .bottom .createNewAcc button::before {
+  content: "";
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  width: 0;
+  height: 100%;
+  background-color: #1C8EFF;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  z-index: -1;
+}
+.signup .bottom .createNewAcc button:hover {
+  color: #4EA7FF;
+}
+.signup .bottom .createNewAcc button:hover::after {
+  width: 50%;
+  background-color: #fff;
+}
+.signup .bottom .createNewAcc button:hover::before {
+  width: 50%;
+  background-color: #fff;
+}
+.signup .bottom .personal-details h1, .signup .bottom .parentsDetails h1, .signup .bottom .educationDetails h1, .signup .bottom .contactDetails h1, .signup .bottom .accountDetails h1 {
+  padding: 62px 0 55px;
+  margin-bottom: 0px;
+  font-size: 40px;
+  font-weight: 700;
+}
+.signup .bottom .personal-details form .upper, .signup .bottom .parentsDetails form .upper, .signup .bottom .educationDetails form .upper, .signup .bottom .contactDetails form .upper, .signup .bottom .accountDetails form .upper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  gap: 100px;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+.signup .bottom .personal-details form .upper .left, .signup .bottom .personal-details form .upper .right, .signup .bottom .parentsDetails form .upper .left, .signup .bottom .parentsDetails form .upper .right, .signup .bottom .educationDetails form .upper .left, .signup .bottom .educationDetails form .upper .right, .signup .bottom .contactDetails form .upper .left, .signup .bottom .contactDetails form .upper .right, .signup .bottom .accountDetails form .upper .left, .signup .bottom .accountDetails form .upper .right {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 38px;
+}
+.signup .bottom .personal-details form .upper .right, .signup .bottom .parentsDetails form .upper .right, .signup .bottom .educationDetails form .upper .right, .signup .bottom .contactDetails form .upper .right, .signup .bottom .accountDetails form .upper .right {
+  gap: 30px !important;
+}
+.signup .bottom .personal-details form .upper .input, .signup .bottom .parentsDetails form .upper .input, .signup .bottom .educationDetails form .upper .input, .signup .bottom .contactDetails form .upper .input, .signup .bottom .accountDetails form .upper .input {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 10px;
+}
+.signup .bottom .personal-details form .upper .input label, .signup .bottom .parentsDetails form .upper .input label, .signup .bottom .educationDetails form .upper .input label, .signup .bottom .contactDetails form .upper .input label, .signup .bottom .accountDetails form .upper .input label {
+  font-size: 14px;
+  font-weight: 700;
+}
+.signup .bottom .personal-details form .upper .input input, .signup .bottom .parentsDetails form .upper .input input, .signup .bottom .educationDetails form .upper .input input, .signup .bottom .contactDetails form .upper .input input, .signup .bottom .accountDetails form .upper .input input {
+  background: transparent;
+  border: 1px solid #C0E0FF;
+  -webkit-box-shadow: 0px 0px 5px 1px rgba(0, 98, 193, 0.25);
+          box-shadow: 0px 0px 5px 1px rgba(0, 98, 193, 0.25);
+  border-radius: 7px;
+  width: 255px;
+  height: 46px;
+  padding: 0 12px 0;
+  outline: none;
+  color: #fff;
+}
+.signup .bottom .personal-details form .upper .input input::-webkit-input-placeholder, .signup .bottom .parentsDetails form .upper .input input::-webkit-input-placeholder, .signup .bottom .educationDetails form .upper .input input::-webkit-input-placeholder, .signup .bottom .contactDetails form .upper .input input::-webkit-input-placeholder, .signup .bottom .accountDetails form .upper .input input::-webkit-input-placeholder {
+  font-size: 10px;
+  font-weight: 700;
+  color: #C0E0FF;
+}
+.signup .bottom .personal-details form .upper .input input::-moz-placeholder, .signup .bottom .parentsDetails form .upper .input input::-moz-placeholder, .signup .bottom .educationDetails form .upper .input input::-moz-placeholder, .signup .bottom .contactDetails form .upper .input input::-moz-placeholder, .signup .bottom .accountDetails form .upper .input input::-moz-placeholder {
+  font-size: 10px;
+  font-weight: 700;
+  color: #C0E0FF;
+}
+.signup .bottom .personal-details form .upper .input input:-ms-input-placeholder, .signup .bottom .parentsDetails form .upper .input input:-ms-input-placeholder, .signup .bottom .educationDetails form .upper .input input:-ms-input-placeholder, .signup .bottom .contactDetails form .upper .input input:-ms-input-placeholder, .signup .bottom .accountDetails form .upper .input input:-ms-input-placeholder {
+  font-size: 10px;
+  font-weight: 700;
+  color: #C0E0FF;
+}
+.signup .bottom .personal-details form .upper .input input::-ms-input-placeholder, .signup .bottom .parentsDetails form .upper .input input::-ms-input-placeholder, .signup .bottom .educationDetails form .upper .input input::-ms-input-placeholder, .signup .bottom .contactDetails form .upper .input input::-ms-input-placeholder, .signup .bottom .accountDetails form .upper .input input::-ms-input-placeholder {
+  font-size: 10px;
+  font-weight: 700;
+  color: #C0E0FF;
+}
+.signup .bottom .personal-details form .upper .input input::placeholder, .signup .bottom .parentsDetails form .upper .input input::placeholder, .signup .bottom .educationDetails form .upper .input input::placeholder, .signup .bottom .contactDetails form .upper .input input::placeholder, .signup .bottom .accountDetails form .upper .input input::placeholder {
+  font-size: 10px;
+  font-weight: 700;
+  color: #C0E0FF;
+}
+.signup .bottom .personal-details form .upper .input input[type=date], .signup .bottom .parentsDetails form .upper .input input[type=date], .signup .bottom .educationDetails form .upper .input input[type=date], .signup .bottom .contactDetails form .upper .input input[type=date], .signup .bottom .accountDetails form .upper .input input[type=date] {
+  color: #C0E0FF;
+  font-size: 10px;
+}
+.signup .bottom .personal-details form .upper .input input[type=date]::-webkit-calendar-picker-indicator, .signup .bottom .parentsDetails form .upper .input input[type=date]::-webkit-calendar-picker-indicator, .signup .bottom .educationDetails form .upper .input input[type=date]::-webkit-calendar-picker-indicator, .signup .bottom .contactDetails form .upper .input input[type=date]::-webkit-calendar-picker-indicator, .signup .bottom .accountDetails form .upper .input input[type=date]::-webkit-calendar-picker-indicator {
+  opacity: 1;
+  display: block;
+  background: url("../../../images/uiw_date.svg") no-repeat;
+  width: 20px;
+  height: 20px;
+  border-width: thin;
+  cursor: pointer;
+}
+.signup .bottom .personal-details form .upper .input input[type=radio], .signup .bottom .parentsDetails form .upper .input input[type=radio], .signup .bottom .educationDetails form .upper .input input[type=radio], .signup .bottom .contactDetails form .upper .input input[type=radio], .signup .bottom .accountDetails form .upper .input input[type=radio] {
+  max-width: 10px;
+  background: transparent;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  margin: 0 8px;
+}
+.signup .bottom .personal-details form .upper .input input[type=radio]:checked + label img, .signup .bottom .parentsDetails form .upper .input input[type=radio]:checked + label img, .signup .bottom .educationDetails form .upper .input input[type=radio]:checked + label img, .signup .bottom .contactDetails form .upper .input input[type=radio]:checked + label img, .signup .bottom .accountDetails form .upper .input input[type=radio]:checked + label img {
+  -webkit-filter: brightness(0.5);
+          filter: brightness(0.5);
+}
+.signup .bottom .personal-details form .upper .input .genders, .signup .bottom .parentsDetails form .upper .input .genders, .signup .bottom .educationDetails form .upper .input .genders, .signup .bottom .contactDetails form .upper .input .genders, .signup .bottom .accountDetails form .upper .input .genders {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.signup .bottom .personal-details form .upper .input .genders label img, .signup .bottom .parentsDetails form .upper .input .genders label img, .signup .bottom .educationDetails form .upper .input .genders label img, .signup .bottom .contactDetails form .upper .input .genders label img, .signup .bottom .accountDetails form .upper .input .genders label img {
+  cursor: pointer;
+}
+.signup .bottom .personal-details form .upper .input .genders label img:active, .signup .bottom .parentsDetails form .upper .input .genders label img:active, .signup .bottom .educationDetails form .upper .input .genders label img:active, .signup .bottom .contactDetails form .upper .input .genders label img:active, .signup .bottom .accountDetails form .upper .input .genders label img:active {
+  -webkit-filter: brightness(0.8);
+          filter: brightness(0.8);
+}
+@media (max-width: 767px) {
+  .signup .bottom .personal-details form .upper, .signup .bottom .parentsDetails form .upper, .signup .bottom .educationDetails form .upper, .signup .bottom .contactDetails form .upper, .signup .bottom .accountDetails form .upper {
+    gap: 30px;
+  }
+}
+@media (max-width: 600px) {
+  .signup .bottom .personal-details form .upper, .signup .bottom .parentsDetails form .upper, .signup .bottom .educationDetails form .upper, .signup .bottom .contactDetails form .upper, .signup .bottom .accountDetails form .upper {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+}
+.signup .bottom .parentsDetails .alert-danger, .signup .bottom .educationDetails .alert-danger, .signup .bottom .contactDetails .alert-danger, .signup .bottom .accountDetails .alert-danger {
+  max-width: 600px;
+  margin-bottom: 20px !important;
+  font-size: 12px;
+}
+.signup .bottom .parentsDetails form, .signup .bottom .educationDetails form, .signup .bottom .contactDetails form, .signup .bottom .accountDetails form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 38px;
+}
+.signup .bottom .parentsDetails form .input, .signup .bottom .educationDetails form .input, .signup .bottom .contactDetails form .input, .signup .bottom .accountDetails form .input {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 10px;
+  position: relative;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+.signup .bottom .parentsDetails form .input label, .signup .bottom .educationDetails form .input label, .signup .bottom .contactDetails form .input label, .signup .bottom .accountDetails form .input label {
+  font-size: 14px;
+  font-weight: 700;
+}
+.signup .bottom .parentsDetails form .input .inputWithIcon, .signup .bottom .educationDetails form .input .inputWithIcon, .signup .bottom .contactDetails form .input .inputWithIcon, .signup .bottom .accountDetails form .input .inputWithIcon {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  gap: 0;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.signup .bottom .parentsDetails form .input input, .signup .bottom .educationDetails form .input input, .signup .bottom .contactDetails form .input input, .signup .bottom .accountDetails form .input input {
+  width: 255px;
+  height: 46px;
+  background: transparent;
+  border: 1px solid #C0E0FF;
+  -webkit-box-shadow: 0px 0px 5px 1px rgba(0, 98, 193, 0.25);
+          box-shadow: 0px 0px 5px 1px rgba(0, 98, 193, 0.25);
+  border-radius: 7px;
+  outline: none;
+  padding: 0 10px;
+  color: #fff;
+  -webkit-appearance: textfield;
+     -moz-appearance: textfield;
+          appearance: textfield;
+}
+.signup .bottom .parentsDetails form .input input + img, .signup .bottom .educationDetails form .input input + img, .signup .bottom .contactDetails form .input input + img, .signup .bottom .accountDetails form .input input + img {
+  width: 20px;
+}
+.signup .bottom .parentsDetails form .input input::-webkit-input-placeholder, .signup .bottom .educationDetails form .input input::-webkit-input-placeholder, .signup .bottom .contactDetails form .input input::-webkit-input-placeholder, .signup .bottom .accountDetails form .input input::-webkit-input-placeholder {
+  color: #C0E0FF;
+  font-size: 10px;
+}
+.signup .bottom .parentsDetails form .input input::-moz-placeholder, .signup .bottom .educationDetails form .input input::-moz-placeholder, .signup .bottom .contactDetails form .input input::-moz-placeholder, .signup .bottom .accountDetails form .input input::-moz-placeholder {
+  color: #C0E0FF;
+  font-size: 10px;
+}
+.signup .bottom .parentsDetails form .input input:-ms-input-placeholder, .signup .bottom .educationDetails form .input input:-ms-input-placeholder, .signup .bottom .contactDetails form .input input:-ms-input-placeholder, .signup .bottom .accountDetails form .input input:-ms-input-placeholder {
+  color: #C0E0FF;
+  font-size: 10px;
+}
+.signup .bottom .parentsDetails form .input input::-ms-input-placeholder, .signup .bottom .educationDetails form .input input::-ms-input-placeholder, .signup .bottom .contactDetails form .input input::-ms-input-placeholder, .signup .bottom .accountDetails form .input input::-ms-input-placeholder {
+  color: #C0E0FF;
+  font-size: 10px;
+}
+.signup .bottom .parentsDetails form .input input::placeholder, .signup .bottom .educationDetails form .input input::placeholder, .signup .bottom .contactDetails form .input input::placeholder, .signup .bottom .accountDetails form .input input::placeholder {
+  color: #C0E0FF;
+  font-size: 10px;
+}
+.signup .bottom .parentsDetails form .input input::-webkit-outer-spin-button, .signup .bottom .parentsDetails form .input input::-webkit-inner-spin-button, .signup .bottom .educationDetails form .input input::-webkit-outer-spin-button, .signup .bottom .educationDetails form .input input::-webkit-inner-spin-button, .signup .bottom .contactDetails form .input input::-webkit-outer-spin-button, .signup .bottom .contactDetails form .input input::-webkit-inner-spin-button, .signup .bottom .accountDetails form .input input::-webkit-outer-spin-button, .signup .bottom .accountDetails form .input input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+.signup .bottom .parentsDetails form .checkbox, .signup .bottom .educationDetails form .checkbox, .signup .bottom .contactDetails form .checkbox, .signup .bottom .accountDetails form .checkbox {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  gap: 11px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.signup .bottom .parentsDetails form .checkbox input, .signup .bottom .educationDetails form .checkbox input, .signup .bottom .contactDetails form .checkbox input, .signup .bottom .accountDetails form .checkbox input {
+  width: 20px;
+  height: 20px;
+}
+.signup .bottom .parentsDetails form .checkbox label, .signup .bottom .educationDetails form .checkbox label, .signup .bottom .contactDetails form .checkbox label, .signup .bottom .accountDetails form .checkbox label {
+  font-size: 14px;
+  font-weight: 400;
+}
+@media (max-width: 767px) {
+  .signup .bottom .parentsDetails form .checkbox label, .signup .bottom .educationDetails form .checkbox label, .signup .bottom .contactDetails form .checkbox label, .signup .bottom .accountDetails form .checkbox label {
+    font-size: 11px;
+  }
+}
+.signup .bottom .parentsDetails form .checkbox label a, .signup .bottom .educationDetails form .checkbox label a, .signup .bottom .contactDetails form .checkbox label a, .signup .bottom .accountDetails form .checkbox label a {
+  text-decoration: underline !important;
+}
+.signup .bottom .parentsDetails form select, .signup .bottom .educationDetails form select, .signup .bottom .contactDetails form select, .signup .bottom .accountDetails form select {
+  width: 255px;
+  height: 46px;
+  outline: none;
+  font-size: 10px;
+  background: transparent;
+  border: 1px solid #C0E0FF;
+  -webkit-box-shadow: 0px 0px 5px 1px rgba(0, 98, 193, 0.25);
+          box-shadow: 0px 0px 5px 1px rgba(0, 98, 193, 0.25);
+  border-radius: 7px;
+  color: #C0E0FF;
+  padding: 0 8px;
+}
+.signup .bottom .parentsDetails form select option, .signup .bottom .educationDetails form select option, .signup .bottom .contactDetails form select option, .signup .bottom .accountDetails form select option {
+  color: #4EA7FF;
+  font-size: 14px;
+}
+@media (max-width: 600px) {
+  .signup .top .container {
+    padding: 36px 30px 30px;
+  }
+  .signup .top .container .image {
+    max-width: 250px;
+  }
+  .signup .top .container .Backbutton {
+    max-width: 30px;
+  }
+  .signup .top .container .Backbutton a button svg {
+    max-width: 30px;
+  }
+  .signup .bottom .createNewAcc h1 {
+    text-align: center;
+    font-size: 30px;
+    padding: 48px 0 63px;
+  }
+  .signup .bottom .createNewAcc ul {
+    margin-left: 16px !important;
+  }
+  .signup .bottom .personal-details h1 {
+    text-align: center;
+    font-size: 30px;
+    padding: 48px 0 63px;
+  }
+}
+@media (max-width: 400px) {
+  .signup .top .container {
+    padding: 26px 20px 25px;
+  }
+  .signup .bottom .createNewAcc h1 {
+    font-size: 25px;
+    padding-bottom: 35px;
+  }
+  .signup .bottom .createNewAcc ul li {
+    font-size: 11px;
+  }
+  .signup .bottom .createNewAcc button {
+    width: 240px;
+  }
+  .signup .bottom .personal-details h1 {
+    font-size: 25px;
+    padding-bottom: 35px;
+  }
+}

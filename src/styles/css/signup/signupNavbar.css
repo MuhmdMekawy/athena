@@ -1,0 +1,37 @@
+.SignUpNavbar .container {
+  padding: 45px 17px;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  gap: 15px;
+}
+.SignUpNavbar .container .logo {
+  max-width: 390px;
+}
+@media (max-width: 600px) {
+  .SignUpNavbar .container .logo {
+    max-width: 200px;
+  }
+}
+.SignUpNavbar .container .logo svg {
+  width: 100%;
+}
+@media (max-width: 600px) {
+  .SignUpNavbar .Backbutton svg {
+    max-width: 30px;
+  }
+}
+.SignUpNavbar svg {
+  fill: var(--text-in-light-dark) !important;
+}

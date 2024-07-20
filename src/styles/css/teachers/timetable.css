@@ -1,0 +1,728 @@
+:root {
+  --p-active:#fff;
+}
+
+.time-table-popUp {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  background: #fff;
+  max-width: 1164px;
+  margin: 0 auto;
+  border-radius: 25px;
+  overflow: hidden;
+  -webkit-box-shadow: 5px 5px 22px 1px rgba(78, 167, 255, 0.3019607843);
+          box-shadow: 5px 5px 22px 1px rgba(78, 167, 255, 0.3019607843);
+  z-index: 99;
+  width: 100%;
+}
+.time-table-popUp .head {
+  padding: 34px 70px 31px;
+  background: #4EA7FF;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  gap: 15px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #fff;
+}
+.time-table-popUp .head .close-icon {
+  width: 40px;
+  height: 40px;
+  border-radius: 5px;
+  background: rgba(255, 255, 255, 0.25);
+  color: #fff;
+}
+.time-table-popUp .head .close-icon svg {
+  width: 14px;
+  height: 14px;
+}
+.time-table-popUp .head .left {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.time-table-popUp .head .left h1 {
+  font-size: 40px;
+  font-weight: 700;
+  margin-bottom: 0;
+  margin-right: 31px;
+}
+.time-table-popUp .head .left .teacher-info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  gap: 5px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.time-table-popUp .head .left .teacher-info .text h2 {
+  font-size: 10px;
+  font-weight: 400;
+  margin-bottom: 10px;
+}
+.time-table-popUp .head .left .teacher-info .text h3 {
+  font-size: 14px;
+  font-weight: 700;
+  margin-bottom: 0;
+}
+.time-table-popUp .head .left .teacher-info .image {
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+@media (max-width: 991px) {
+  .time-table-popUp .head {
+    padding: 34px 30px 31px;
+  }
+  .time-table-popUp .head .left h1 {
+    font-size: 30px;
+  }
+}
+@media (max-width: 650px) {
+  .time-table-popUp .head {
+    padding: 34px 30px 31px;
+  }
+  .time-table-popUp .head .left {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    gap: 20px;
+  }
+  .time-table-popUp .head .left h1 {
+    font-size: 27px;
+    margin: 0;
+  }
+}
+@media (max-width: 500px) {
+  .time-table-popUp .head {
+    padding: 34px 12px 31px;
+  }
+  .time-table-popUp .head .left h1 {
+    font-size: 20px;
+  }
+}
+.time-table-popUp .teacher-table {
+  padding: 51px 70px 68px;
+}
+@media (max-width: 991px) {
+  .time-table-popUp .teacher-table {
+    padding: 30px 30px 40px;
+  }
+}
+@media (max-width: 767px) {
+  .time-table-popUp .teacher-table {
+    padding: 30px 12px 40px;
+  }
+}
+.time-table-popUp .teacher-table .header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  gap: 10px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  position: relative;
+  padding-bottom: 25px;
+  margin-bottom: 37px;
+}
+.time-table-popUp .teacher-table .header::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 1px;
+  background: linear-gradient(90.15deg, #33F3FF 0.13%, #8987FF 49.48%, #B843FF 99.87%);
+}
+.time-table-popUp .teacher-table .header h1 {
+  font-size: 25px;
+  font-weight: 400;
+  margin-bottom: 0;
+  color: #4EA7FF;
+}
+.time-table-popUp .teacher-table .header .date-slider {
+  border: 1px solid #4EA7FF;
+}
+@media (max-width: 560px) {
+  .time-table-popUp .teacher-table .header h1 {
+    font-size: 18px;
+  }
+}
+@media (max-width: 400px) {
+  .time-table-popUp .teacher-table .header {
+    -ms-flex-wrap: wrap-reverse;
+        flex-wrap: wrap-reverse;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    gap: 20px;
+    padding-bottom: 20px;
+    margin-bottom: 25px;
+  }
+  .time-table-popUp .teacher-table .header .date-slider {
+    width: 130px;
+    text-align: center;
+  }
+  .time-table-popUp .teacher-table .header h1 {
+    font-size: 18px;
+  }
+}
+.time-table-popUp .teacher-table .time-table-attendance {
+  border: 2px solid #4EA7FF;
+  border-radius: 12px;
+}
+.time-table-popUp .teacher-table .time-table-attendance .table {
+  border: 2px solid #4EA7FF;
+  border-radius: 12px !important;
+  color: #4EA7FF;
+  margin-bottom: 0;
+  border-collapse: collapse;
+  border-spacing: 0;
+  overflow: hidden;
+}
+.time-table-popUp .teacher-table .time-table-attendance .table th, .time-table-popUp .teacher-table .time-table-attendance .table td {
+  color: #4EA7FF;
+  font-size: 14px;
+  font-weight: 400;
+  text-align: center;
+  padding: 20px 15px;
+}
+@media (max-width: 991px) {
+  .time-table-popUp .teacher-table .time-table-attendance .table th, .time-table-popUp .teacher-table .time-table-attendance .table td {
+    padding: 14px 0px;
+  }
+  .time-table-popUp .teacher-table .time-table-attendance .table th svg, .time-table-popUp .teacher-table .time-table-attendance .table td svg {
+    width: 20px;
+    height: 20px;
+  }
+}
+@media (max-width: 780px) {
+  .time-table-popUp .teacher-table .time-table-attendance .table th, .time-table-popUp .teacher-table .time-table-attendance .table td {
+    padding: 14px 0px;
+    font-size: 10px;
+  }
+  .time-table-popUp .teacher-table .time-table-attendance .table th svg, .time-table-popUp .teacher-table .time-table-attendance .table td svg {
+    width: 20px;
+    height: 20px;
+  }
+}
+@media (max-width: 500px) {
+  .time-table-popUp .teacher-table .time-table-attendance .table th, .time-table-popUp .teacher-table .time-table-attendance .table td {
+    font-size: 7px;
+  }
+  .time-table-popUp .teacher-table .time-table-attendance .table th svg, .time-table-popUp .teacher-table .time-table-attendance .table td svg {
+    width: 14px;
+    height: 14px;
+  }
+}
+.time-table-popUp .teacher-table .time-table-attendance .table .curr-month {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
+.time-table-page .weekly-schedule {
+  color: var(--text-in-light-dark);
+  margin-top: 8px;
+}
+.time-table-page .weekly-schedule h3 {
+  font-size: 25px;
+  font-weight: 500;
+  margin-bottom: 26px;
+}
+.time-table-page .weekly-schedule .head {
+  display: none;
+}
+.time-table-page .weekly-schedule .next-classes {
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+.time-table-page .weekly-schedule .next-classes .left-classes {
+  gap: 0;
+  width: 100%;
+}
+.time-table-page .weekly-schedule .right-date {
+  -webkit-box-shadow: 5px 5px 22px 1px rgba(78, 167, 255, 0.3019607843);
+          box-shadow: 5px 5px 22px 1px rgba(78, 167, 255, 0.3019607843);
+}
+.time-table-page .weekly-schedule .right-date .header h4 {
+  color: #fff;
+}
+.time-table-page .weekly-schedule .tabs {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 10px;
+  margin-bottom: 28px;
+  max-width: 1017px;
+}
+@media (max-width: 1200px) {
+  .time-table-page .weekly-schedule .tabs {
+    -ms-flex-wrap: wrap-reverse;
+        flex-wrap: wrap-reverse;
+  }
+}
+.time-table-page .weekly-schedule .tabs .days {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  gap: 13px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.time-table-page .weekly-schedule .tabs .days p {
+  margin-bottom: 0;
+  font-size: 12px;
+  font-weight: 700;
+  border-radius: 6px;
+  border: 1px solid;
+  padding: 8px;
+  cursor: pointer;
+  position: relative;
+  z-index: 3;
+  overflow: hidden;
+  text-transform: lowercase;
+  text-align: center;
+}
+.time-table-page .weekly-schedule .tabs .days p:not(.active):hover {
+  color: #fff;
+}
+.time-table-page .weekly-schedule .tabs .days p:not(.active):hover::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: #4EA7FF;
+  z-index: -1;
+}
+.time-table-page .weekly-schedule .tabs .days p.active {
+  background: var(--text-in-light-dark);
+  color: var(--p-active);
+}
+@media (max-width: 767px) {
+  .time-table-page .weekly-schedule .tabs .days {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 20px 1fr 20px 1fr 20px 1fr 20px 1fr;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 20px;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+@media (max-width: 500px) {
+  .time-table-page .weekly-schedule .tabs .days {
+    -ms-grid-columns: 1fr 20px 1fr 20px 1fr 20px 1fr;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+  }
+}
+@media (max-width: 400px) {
+  .time-table-page .weekly-schedule .tabs .days {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: start;
+    gap: 10px;
+  }
+}
+.time-table-page .weekly-schedule .tabs .status-course {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  gap: 13px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.time-table-page .weekly-schedule .tabs .status-course p {
+  margin-bottom: 0;
+  font-size: 12px;
+  font-weight: 700;
+  border-radius: 6px;
+  border: 1px solid;
+  padding: 5px 14px;
+  cursor: pointer;
+}
+.time-table-page .weekly-schedule .tabs .status-course p:first-child {
+  background: linear-gradient(90.15deg, #33F3FF 0.13%, #8987FF 49.48%, #B843FF 99.87%);
+  color: #fff;
+  text-wrap: nowrap;
+}
+.time-table-page .weekly-schedule .tabs .status-course p:last-child {
+  color: #29D277;
+}
+@media (max-width: 991px) {
+  .time-table-page .weekly-schedule .tabs {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+    gap: 20px;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
+  }
+}
+.time-table-page .weekly-schedule .left .class {
+  border-radius: 10px;
+  height: 85px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  position: relative;
+  overflow: hidden;
+  color: #fff;
+  background: #003BD1;
+}
+.time-table-page .weekly-schedule .left .class.Mathematics {
+  background: #003BD1;
+}
+.time-table-page .weekly-schedule .left .class.Mathematics:hover {
+  background: linear-gradient(96.1deg, #001D66 0%, #000A24 74.75%);
+}
+.time-table-page .weekly-schedule .left .class.English, .time-table-page .weekly-schedule .left .class.Italian, .time-table-page .weekly-schedule .left .class.Arabic, .time-table-page .weekly-schedule .left .class.French, .time-table-page .weekly-schedule .left .class.Germany {
+  background: #4EA7FF;
+}
+.time-table-page .weekly-schedule .left .class.English:hover, .time-table-page .weekly-schedule .left .class.Italian:hover, .time-table-page .weekly-schedule .left .class.Arabic:hover, .time-table-page .weekly-schedule .left .class.French:hover, .time-table-page .weekly-schedule .left .class.Germany:hover {
+  background: linear-gradient(96.14deg, #003366 0%, #001224 74.42%), linear-gradient(180deg, #003366 0%, #001224 100%);
+}
+.time-table-page .weekly-schedule .left .class.Physics, .time-table-page .weekly-schedule .left .class.Chemistry {
+  background: #B63FFF;
+}
+.time-table-page .weekly-schedule .left .class.Physics:hover, .time-table-page .weekly-schedule .left .class.Chemistry:hover {
+  background: linear-gradient(96.1deg, #3F0066 0%, #160024 74.75%);
+}
+.time-table-page .weekly-schedule .left .class.Biology, .time-table-page .weekly-schedule .left .class.Geology {
+  background: #29D277;
+}
+.time-table-page .weekly-schedule .left .class.Biology:hover, .time-table-page .weekly-schedule .left .class.Geology:hover {
+  background: linear-gradient(96.09deg, #115530 0%, #061E11 74.92%);
+}
+.time-table-page .weekly-schedule .left .class.Psychology, .time-table-page .weekly-schedule .left .class.History, .time-table-page .weekly-schedule .left .class.Geography, .time-table-page .weekly-schedule .left .class.Philosophy {
+  background: #D13200;
+}
+.time-table-page .weekly-schedule .left .class.Psychology:hover, .time-table-page .weekly-schedule .left .class.History:hover, .time-table-page .weekly-schedule .left .class.Geography:hover, .time-table-page .weekly-schedule .left .class.Philosophy:hover {
+  background: linear-gradient(96.07deg, #661800 0%, #240900 75.08%);
+}
+.time-table-page .weekly-schedule .left .class .text {
+  padding: 13px 19px 6px;
+}
+.time-table-page .weekly-schedule .left .class .text h3 {
+  font-size: 14px;
+  font-weight: 300;
+  margin-bottom: 12px;
+}
+.time-table-page .weekly-schedule .left .class .text p {
+  font-size: 25px;
+  font-weight: 700;
+  margin-bottom: 0;
+}
+@media (max-width: 1200px) {
+  .time-table-page .weekly-schedule .left .class .text p {
+    font-size: 18px;
+  }
+}
+.time-table-page .weekly-schedule .left .class .text.teacherName {
+  display: none;
+  color: #E8F3FF;
+}
+.time-table-page .weekly-schedule .left .class .text.teacherName h3 {
+  font-size: 10px;
+  font-weight: 300;
+  margin-bottom: 8px;
+}
+.time-table-page .weekly-schedule .left .class .text.teacherName p {
+  font-size: 14px;
+  font-weight: 700;
+  margin-bottom: 0;
+}
+.time-table-page .weekly-schedule .left .class .image {
+  position: absolute;
+  right: var(--positionImg-right-image);
+  left: var(--positionImg-left-image);
+  top: 0;
+  width: 73px;
+  height: 100%;
+}
+.time-table-page .weekly-schedule .left .class .image img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+}
+.time-table-page .weekly-schedule .left .class:hover .text {
+  display: none;
+}
+.time-table-page .weekly-schedule .left .class:hover .text.teacherName {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.time-table-page .explore-teachers {
+  color: var(--text-in-light-dark);
+}
+.time-table-page .explore-teachers .bottom {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  gap: 34px;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  margin-top: 25px;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  border-radius: 15px;
+  overflow: hidden;
+  -webkit-box-shadow: 5px 5px 22px 1px rgba(78, 167, 255, 0.3019607843);
+          box-shadow: 5px 5px 22px 1px rgba(78, 167, 255, 0.3019607843);
+  padding: 35px 35px;
+  background: linear-gradient(134deg, rgba(94, 216, 255, 0.05) 0%, rgba(132, 144, 255, 0.05) 47.92%, rgba(192, 90, 255, 0.05) 100%);
+}
+.time-table-page .explore-teachers .bottom .submitBtn.special {
+  margin-bottom: 0;
+}
+@media (max-width: 767px) {
+  .time-table-page .explore-teachers .bottom {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[1];
+    grid-template-columns: repeat(1, 1fr);
+    width: 100%;
+  }
+  .time-table-page .explore-teachers .bottom .content {
+    -ms-grid-columns: (1fr)[2];
+    grid-template-columns: repeat(2, 1fr);
+    width: 100%;
+  }
+}
+@media (max-width: 500px) {
+  .time-table-page .explore-teachers .bottom {
+    padding: 15px 2px;
+    margin: 25px auto;
+  }
+}
+.time-table-page .explore-teachers .content {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  -ms-grid-columns: (135px)[3];
+  grid-template-columns: repeat(3, 135px);
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+  border: none;
+  margin-top: 0;
+  border-radius: 0;
+  padding: 0;
+  background: transparent;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+}
+.time-table-page .explore-teachers .content .cont {
+  cursor: pointer;
+}
+.time-table-page .explore-teachers .content .cont .text h4 {
+  color: #fff;
+  margin-top: 0 !important;
+  padding: 0 !important;
+  border: none !important;
+}
+@media (max-width: 500px) {
+  .time-table-page .explore-teachers .content {
+    -ms-grid-columns: (1fr)[1];
+    grid-template-columns: repeat(1, 1fr);
+    width: initial;
+  }
+}
+.time-table-page .explore-teachers .time-table-teacher {
+  border-radius: 0;
+  padding: 0;
+  background: transparent;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+.time-table-page .explore-teachers .time-table-teacher .dates {
+  gap: 11px;
+}
+.time-table-page .explore-teachers .time-table-teacher .special-head h3 {
+  padding-bottom: 12px;
+  margin: 0 0 17px;
+  font-size: 25px;
+}
+@media (max-width: 991px) {
+  .time-table-page .explore-teachers .time-table-teacher .special-head h3 {
+    font-size: 20px;
+  }
+}
+.time-table-page .explore-teachers .time-table-teacher .special-head h3::after {
+  margin: 0;
+}
+.time-table-page .explore-teachers .time-table-teacher .special-head img {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  display: inline;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+@media (max-width: 767px) {
+  .time-table-page .explore-teachers .time-table-teacher .special-head {
+    width: 100%;
+  }
+}
+.time-table-page .explore-teachers .time-table-teacher .teacher-tab {
+  padding: 6px 21px;
+  height: 34px;
+}
+@media (max-width: 1200px) {
+  .time-table-page .explore-teachers .time-table-teacher .teacher-tab {
+    padding: 6px;
+    text-align: center;
+    font-size: 15px;
+    height: unset;
+  }
+}
+@media (max-width: 991px) {
+  .time-table-page .explore-teachers .time-table-teacher .teacher-tab {
+    padding: 6px 11px;
+    text-align: center;
+    font-size: 10px;
+    height: unset;
+  }
+}
+@media (max-width: 767px) {
+  .time-table-page .explore-teachers .time-table-teacher .teacher-tab {
+    width: 100%;
+    text-align: center;
+    font-size: 15px;
+  }
+}
+@media (max-width: 767px) {
+  .time-table-page .explore-teachers .time-table-teacher h4 {
+    font-size: 16px;
+  }
+  .time-table-page .explore-teachers .time-table-teacher .submitBtn.special {
+    width: 100%;
+    max-width: unset;
+  }
+}
+
+.signup-footer {
+  position: relative;
+  z-index: 3;
+  margin-top: 190px;
+}
+.signup-footer::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(89.94deg, #38F3FF 20.13%, #C463FF 77.65%);
+  z-index: -1;
+  -webkit-filter: blur(67px);
+          filter: blur(67px);
+}
+.signup-footer h6 {
+  padding: 120px 0 60px;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: 0 auto;
+}

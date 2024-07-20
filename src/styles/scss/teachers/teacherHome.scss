@@ -1,0 +1,20 @@
+.teachers-home{
+  margin-bottom: 200px;
+  .explore-teachers{
+    color: var(--text-in-light-dark);
+    .cont{
+      &.outline{
+        h1{
+          margin-bottom: 0;
+          font-size: 25px;
+          font-weight: 400;
+        }
+        color: var(--text-in-light-dark);
+        border-radius: 7px;
+        border: 1px solid var(--text-in-light-dark);
+        padding: 37px 14px 28px;
+        background: transparent;
+      }
+    }
+  }
+}

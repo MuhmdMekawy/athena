@@ -1,0 +1,190 @@
+.upcoming-page {
+  color: var(--color-h1-wisdom);
+  margin-top: 234px;
+}
+.upcoming-page .content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 60px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.upcoming-page .content .left h1 {
+  font-size: 40px;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+.upcoming-page .content .left p {
+  font-size: 20px;
+  font-weight: 400;
+  margin-bottom: 32px;
+}
+.upcoming-page .content .left .upcomingexam-date {
+  background: linear-gradient(0deg, #F2F9FF, #F2F9FF), linear-gradient(90.15deg, #33F3FF 0.13%, #8987FF 49.48%, #B843FF 99.87%);
+  text-align: center;
+  padding: 19px 21px;
+  position: relative;
+  margin-bottom: 32px;
+  border-radius: 6px;
+  overflow: hidden;
+  z-index: 1;
+}
+.upcoming-page .content .left .upcomingexam-date::before {
+  content: "";
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(90.15deg, #33F3FF 0.13%, #8987FF 49.48%, #B843FF 99.87%);
+  z-index: -1;
+  -webkit-animation-name: movefromrighttoleft;
+          animation-name: movefromrighttoleft;
+  -webkit-animation-duration: 1000ms;
+          animation-duration: 1000ms;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-direction: alternate;
+          animation-direction: alternate;
+}
+.upcoming-page .content .left .upcomingexam-date::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(90.15deg, #33F3FF 0.13%, #8987FF 49.48%, #B843FF 99.87%);
+  z-index: -1;
+  -webkit-animation-name: movefromlefttoright;
+          animation-name: movefromlefttoright;
+  -webkit-animation-duration: 1000ms;
+          animation-duration: 1000ms;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-direction: alternate;
+          animation-direction: alternate;
+}
+.upcoming-page .content .left .upcomingexam-date p {
+  margin-bottom: 0;
+}
+.upcoming-page .content .right {
+  max-width: 340px;
+}
+@media (max-width: 991px) {
+  .upcoming-page .content .left h1 {
+    font-size: 30px;
+  }
+  .upcoming-page .content .left p {
+    font-size: 14px;
+  }
+}
+@media (max-width: 767px) {
+  .upcoming-page {
+    margin-top: 180px;
+  }
+  .upcoming-page .content {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+  .upcoming-page .content .left h1 {
+    font-size: 40px;
+  }
+  .upcoming-page .content .left p {
+    font-size: 16px;
+  }
+}
+@media (max-width: 500px) {
+  .upcoming-page {
+    margin-top: 150px;
+  }
+  .upcoming-page .content {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+  .upcoming-page .content .left h1 {
+    font-size: 30px;
+  }
+  .upcoming-page .content .left p {
+    font-size: 14px;
+  }
+}
+.upcoming-page .signup-footer {
+  padding: 40px 0 25px;
+  position: relative;
+  bottom: 0;
+  left: 0;
+  z-index: 9;
+  margin-top: 250px;
+  text-align: center;
+}
+@media (max-width: 600px) {
+  .upcoming-page .signup-footer {
+    margin-top: 150px;
+  }
+}
+.upcoming-page .signup-footer::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(89.94deg, #38F3FF 20.13%, #C463FF 77.65%);
+  -webkit-filter: blur(67px);
+          filter: blur(67px);
+  z-index: -1;
+}
+.upcoming-page .signup-footer h6 {
+  padding: 0;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  color: #fff;
+}
+
+@-webkit-keyframes movefromlefttoright {
+  0% {
+    left: 0;
+  }
+  100% {
+    left: 100%;
+  }
+}
+
+@keyframes movefromlefttoright {
+  0% {
+    left: 0;
+  }
+  100% {
+    left: 100%;
+  }
+}
+@-webkit-keyframes movefromrighttoleft {
+  0% {
+    right: 0;
+  }
+  100% {
+    right: 100%;
+  }
+}
+@keyframes movefromrighttoleft {
+  0% {
+    right: 0;
+  }
+  100% {
+    right: 100%;
+  }
+}

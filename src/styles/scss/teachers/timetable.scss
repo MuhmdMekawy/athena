@@ -1,0 +1,586 @@
+:root{
+  --p-active:#fff;
+}
+
+.time-table-popUp{
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: #fff;
+  max-width: 1164px;
+  margin: 0 auto;
+  border-radius: 25px;
+  overflow: hidden;
+  box-shadow: 5px 5px 22px 1px rgba(78, 167, 255, 0.3019607843);
+  z-index: 99;
+  width: 100%;
+  .head{
+    padding: 34px 70px 31px;
+    background: #4EA7FF;
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+    justify-content: space-between;
+    align-items: center;
+    color: #fff;
+    .close-icon{
+      width: 40px;
+      height: 40px;
+      border-radius: 5px;
+      background: rgb(255 255 255 / 25%);
+      color: #fff;
+      svg{
+        width: 14px;
+        height: 14px;
+      }
+    }
+    .left{
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      h1{
+        font-size: 40px;
+        font-weight: 700;
+        margin-bottom: 0;
+        margin-right: 31px;
+      }
+      .teacher-info{
+        display: flex;
+        flex-direction: row;
+        gap: 5px;
+        align-items: center;
+        .text{
+          h2{
+            font-size: 10px;
+            font-weight: 400;
+            margin-bottom: 10px;
+          }
+          h3{
+            font-size: 14px;
+            font-weight: 700;
+            margin-bottom: 0;
+          }
+        }
+        .image{
+          width: 35px;
+          height: 35px;
+          border-radius: 50%;
+          overflow: hidden;
+        }
+      }
+    }
+    @media (max-width : 991px){
+      padding: 34px 30px 31px;
+      .left{
+        h1{
+          font-size: 30px;
+        }
+      }
+    }
+    @media (max-width : 650px){
+      padding: 34px 30px 31px;
+      .left{
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 20px;
+        h1{
+          font-size: 27px;
+          margin: 0;
+        }
+      }
+    }
+    @media (max-width : 500px){
+      padding: 34px 12px 31px;
+      .left{
+        h1{
+          font-size: 20px;
+        }
+      }
+    }
+  }
+  .teacher-table{
+    padding: 51px 70px 68px;
+    @media (max-width : 991px){
+      padding: 30px 30px 40px;
+    }
+    @media (max-width : 767px){
+      padding: 30px 12px 40px;
+    }
+    .header{
+      display: flex;
+      flex-direction: row;
+      gap: 10px;
+      align-items: center;
+      justify-content: space-between;
+      position: relative;
+      padding-bottom: 25px;
+      margin-bottom: 37px;
+      &::after{
+        content: '';
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        height: 1px;
+        background: linear-gradient(90.15deg, #33F3FF 0.13%, #8987FF 49.48%, #B843FF 99.87%);
+      }
+      h1{
+        font-size: 25px;
+        font-weight: 400;
+        margin-bottom: 0;
+        color: #4EA7FF;
+      }
+      .date-slider{
+        border: 1px solid #4EA7FF;
+      }
+      @media (max-width : 560px){
+        h1{
+          font-size: 18px;
+        }
+      }
+      @media (max-width : 400px){
+        flex-wrap: wrap-reverse;
+        justify-content: center;
+        gap: 20px;
+        padding-bottom: 20px;
+        margin-bottom: 25px;
+        .date-slider{
+          width: 130px;
+          text-align: center;
+        }
+        h1{
+          font-size: 18px;
+        }
+      }
+    }
+    .time-table-attendance{
+      border: 2px solid #4EA7FF;
+      border-radius: 12px;
+      .table{
+        border: 2px solid #4EA7FF;
+        border-radius: 12px !important;
+        color: #4EA7FF;
+        margin-bottom: 0;
+        border-collapse: collapse;
+        border-spacing: 0;
+        overflow: hidden;
+        th , td{
+          color: #4EA7FF;
+          font-size: 14px;
+          font-weight: 400;
+          text-align: center;
+          padding: 20px 15px;
+          @media (max-width :991px) {
+            padding: 14px 0px;
+            svg{
+              width: 20px;
+              height: 20px;
+            }
+          }
+          @media (max-width :780px) {
+            padding: 14px 0px;
+            font-size: 10px;
+            svg{
+              width: 20px;
+              height: 20px;
+            }
+          }
+          @media (max-width : 500px){
+            font-size: 7px;
+            svg{
+              width: 14px;
+              height: 14px;
+            }
+          }
+        }
+        .curr-month{
+          width: fit-content;
+        }
+      }
+    }
+  }
+}
+.time-table-page{
+  .weekly-schedule{
+    color: var(--text-in-light-dark);
+    margin-top: 8px;
+    h3{
+      font-size: 25px;
+      font-weight: 500;
+      margin-bottom: 26px;
+    }
+    .head{
+      display: none;
+    }
+    .next-classes{
+      align-items: flex-end;
+      .left-classes{
+        gap: 0;
+        width: 100%;
+
+      }
+    }
+
+    .right-date {
+      box-shadow: 5px 5px 22px 1px #4EA7FF4D;
+      .header h4{
+        color: #fff;
+      }
+    }
+    .tabs{
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      gap: 10px;
+      margin-bottom: 28px;
+      max-width: 1017px;
+      @media (max-width : 1200px){
+        flex-wrap: wrap-reverse;
+      }
+      .days{
+        display: flex;
+        flex-direction: row;
+        gap: 13px;
+        align-items: center;
+        p{
+          margin-bottom: 0;
+          font-size: 12px;
+          font-weight: 700;
+          border-radius: 6px;
+          border: 1px solid;
+          // max-width: 91px;
+          // width: fit-content;
+          padding: 8px;
+          cursor: pointer;
+          position: relative;
+          z-index: 3;
+          overflow: hidden;
+          text-transform: lowercase;
+          text-align: center;
+          &:not(.active):hover{
+            color: #fff;
+            &::after{
+              content: '';
+              position: absolute;
+              left: 0;
+              top: 0;
+              width: 100%;
+              height: 100%;
+              background:#4EA7FF;
+              // color: #fff;
+              z-index: -1;
+            }
+          }
+          &.active{
+            background:var(--text-in-light-dark);
+            color: var(--p-active);
+          }
+        }
+        @media (max-width :767px){
+          display: grid;
+          grid-template-columns: repeat( 5 , 1fr );
+          gap: 20px;
+          justify-content: center;
+        }
+        @media (max-width :500px){
+          grid-template-columns: repeat( 4 , 1fr );
+          gap: 20px;
+        }
+        @media (max-width :400px){
+          display: flex;
+          flex-direction: row;
+          flex-wrap: wrap;
+          justify-content: start;
+          gap: 10px;
+        }
+      }
+      .status-course{
+        display: flex;
+        flex-direction: row;
+        gap: 13px;
+        align-items: center;
+        p{
+          margin-bottom: 0;
+          font-size: 12px;
+          font-weight: 700;
+          border-radius: 6px;
+          border: 1px solid;
+          // text-wrap: nowrap;
+          // width: 100%;
+          padding: 5px 14px;
+          cursor: pointer;
+          &:first-child{
+            background: linear-gradient(90.15deg, #33F3FF 0.13%, #8987FF 49.48%, #B843FF 99.87%);
+            color: #fff;
+            text-wrap: nowrap;
+          }
+          &:last-child{
+            color: #29D277;
+          }
+        }
+      }
+      @media (max-width : 991px){
+        flex-direction: column-reverse;
+        gap: 20px;
+        align-items: flex-end;
+      }
+    }
+    .left{
+      .class{
+        border-radius: 10px;
+        height: 85px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        position: relative;
+        overflow: hidden;
+        color: #fff;
+        background: #003BD1;
+        &.Mathematics{
+          background: #003BD1;
+          &:hover{
+            background: linear-gradient(96.1deg, #001D66 0%, #000A24 74.75%);
+          }
+        }
+        &.English ,&.Italian ,&.Arabic , &.French ,&.Germany{
+          background: #4EA7FF;
+          &:hover{
+            background: linear-gradient(96.14deg, #003366 0%, #001224 74.42%),linear-gradient(180deg, #003366 0%, #001224 100%);
+          }
+        }
+        &.Physics , &.Chemistry{
+          background: #B63FFF;
+          &:hover{
+            background: linear-gradient(96.1deg, #3F0066 0%, #160024 74.75%)
+          }
+        }
+        &.Biology , &.Geology{
+          background: #29D277;
+          &:hover{
+            background: linear-gradient(96.09deg, #115530 0%, #061E11 74.92%);;
+          }
+        }
+        &.Psychology , &.History ,&.Geography ,&.Philosophy{
+          background:#D13200;
+          &:hover{
+            background: linear-gradient(96.07deg, #661800 0%, #240900 75.08%);
+          }
+        }
+        .text{
+          padding: 13px 19px 6px;
+          h3{
+            font-size: 14px;
+            font-weight: 300;
+            margin-bottom: 12px;
+          }
+          p{
+            font-size: 25px;
+            font-weight: 700;
+            margin-bottom: 0;
+            @media (max-width : 1200px){
+              font-size: 18px;
+            }
+          }
+          &.teacherName{
+            display: none;
+            color: #E8F3FF;
+            h3{
+              font-size: 10px;
+              font-weight: 300;
+              margin-bottom: 8px;
+            }
+            p{
+              font-size: 14px;
+              font-weight: 700;
+              margin-bottom: 0;
+              @media (max-width : 1200px){
+                // font-size: 10px;
+              }
+            }
+          }
+        }
+        .image{
+          position: absolute;
+          right: var(--positionImg-right-image);
+          left: var(--positionImg-left-image);
+          top: 0;
+          width: 73px;
+          height: 100%;
+          img{
+            object-fit: cover;
+            object-position: center;
+          }
+        }
+        &:hover{
+          .text{
+            display: none;
+            &.teacherName{
+              display: flex;
+              align-items: flex-start;
+              flex-direction: column;
+            }
+          }
+        }
+      }
+    }
+  }
+  .explore-teachers{
+    color: var(--text-in-light-dark);
+    .bottom{
+      box-shadow: none;
+      display: flex;
+      flex-direction: row;
+      gap: 34px;
+      align-items: flex-start;
+      margin-top: 25px;
+      width: fit-content;
+      border-radius: 15px;
+      overflow: hidden;
+      box-shadow: 5px 5px 22px 1px #4EA7FF4D;
+      padding: 35px 35px;
+      background: linear-gradient(134deg, rgba(94, 216, 255, 0.05) 0%, rgba(132, 144, 255, 0.05) 47.92%, rgba(192, 90, 255, 0.05) 100%);
+      
+      .submitBtn.special{
+        margin-bottom: 0;
+      }
+      @media (max-width : 767px){
+        display: grid;
+        grid-template-columns: repeat( 1 , 1fr);
+        width: 100%;
+        .content{
+          grid-template-columns: repeat(2 , 1fr);
+          width: 100%;
+        }
+      }
+      @media (max-width : 500px){
+        padding: 15px 2px;
+        margin: 25px auto;
+      }
+    }
+    .content{
+      width: fit-content;
+      grid-template-columns: repeat(3 , 135px);
+      justify-content: start;
+      border: none;
+      margin-top: 0;
+      border-radius: 0;
+      padding: 0;
+      background: transparent;
+      height: fit-content;
+      .cont{
+        cursor: pointer;
+        .text{
+          h4{
+            color: #fff;
+            margin-top: 0 !important;
+            padding: 0 !important;
+            border: none !important;
+          }
+        }
+      }
+      @media (max-width :500px){
+        grid-template-columns: repeat(1, 1fr);
+        width: initial;
+      }
+    }
+    .time-table-teacher{
+      border-radius: 0;
+      padding: 0;
+      background: transparent;
+      box-shadow: none;
+      .dates{
+        gap: 11px;
+      }
+      .special-head{
+        h3{
+          padding-bottom: 12px;
+          margin: 0 0 17px;
+          font-size: 25px;
+          @media (max-width : 991px){
+            font-size: 20px;
+          }
+        }
+        h3::after{
+          margin: 0;
+        }
+        img{
+          width: 30px;
+          height: 30px;
+          border-radius: 50%;
+          display: inline;
+          object-fit: cover;
+        }
+        @media (max-width : 767px){
+          width: 100%;
+        }
+      }
+      .teacher-tab{
+        padding: 6px 21px;
+        height: 34px;
+        @media (max-width : 1200px){
+          padding: 6px ;
+          text-align: center;
+          font-size: 15px;
+          height: unset;
+        }
+        @media (max-width : 991px){
+          padding: 6px 11px;
+          text-align: center;
+          font-size: 10px;
+          height: unset;
+        }
+        @media (max-width : 767px){
+          width: 100%;
+          text-align: center;
+          font-size: 15px;
+        }
+      }
+      @media (max-width : 767px){
+        h4{
+          font-size: 16px;
+        }
+        .submitBtn.special{
+          width: 100%;
+          max-width: unset;
+        }
+      }
+    }
+    // h4{
+    //   margin-top: 40px;
+    //   max-width: 600px;
+    //   text-align: center;
+    //   padding: 60px 0;
+    //   font-size: 25px;
+    //   font-weight: 700;
+    //   border: 1px dashed var(--text-in-light-dark);
+    //   border-radius: 12px;
+    //   @media (max-width : 400px){
+    //     font-size: 20px;
+    //   }
+    // }
+  }
+}
+.signup-footer{
+  position: relative;
+  z-index: 3;
+  margin-top: 190px;
+  &::before{
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(89.94deg, #38F3FF 20.13%, #C463FF 77.65%);
+    z-index: -1;
+    filter: blur(67px);
+  }
+  h6{
+    padding: 120px 0 60px;
+    width: fit-content;
+    margin: 0 auto;
+  }
+}

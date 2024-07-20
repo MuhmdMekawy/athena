@@ -1,0 +1,347 @@
+// ------------------------------------------------------------------------------------------------------
+// -----------------------------------------Athena Home Page---------------------------------------------
+// ------------------------------------------------------------------------------------------------------
+.student-tabs{
+  display: flex;
+  flex-direction: column;
+  gap: 22px;
+  align-items: center;
+  width: 461px;
+  @media (max-width :767px){
+    width: 100%;
+  }
+  .tab1{
+    width: 100%;
+    height: 93px;
+    background: linear-gradient(90.15deg, #33F3FF 0.13%, #8987FF 47.92%, #B843FF 99.87%);
+    box-shadow: var(--athenahome-image-boxShadow);
+    border-radius: 12px;
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+    justify-content: space-between;
+    align-items: center;
+    padding: 11px 24px;
+    color: #fff;
+    h3{
+      font-size: 25px;
+      font-weight: 600;
+      margin-bottom: 0;
+    }
+    .numb{
+      display: flex;
+      flex-direction: row;
+      gap: 11px;
+      align-items: center;
+      p{
+        margin-bottom: 0;
+        font-size: 40px;
+        font-weight: 600;
+        @media (max-width : 1200px){
+          font-size: 24px;
+        }
+      }
+      .icon{
+        svg{
+          width: 69px;
+          height: 71px;
+          @media (max-width : 1200px){
+            width: 30px;
+          }
+        }
+      }
+    }
+  }
+  .tab2{
+    width: 100%;
+    padding: 18px 27px;
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+    justify-content: space-between;
+    align-items: center;
+    background: var(--athenahome-elemnts-background);
+    box-shadow: var(--athenahome-image-boxShadow);
+    color: var(--text-in-light-dark);
+    border-radius: 12px;
+    span{
+      font-size: 20px;
+      font-weight: 700;
+    }
+    .code{
+      margin-bottom: 0;
+      text-align: center;
+      z-index: -1;
+      border-radius: 7px;
+      position: relative;
+      z-index: 3;
+      width: 240px;
+      // height: 60px;
+      background: var(--athenahome-code-background);
+      border: 2px dashed #4EA7FF;
+      @media (max-width : 1200px){
+        width: fit-content;
+        height: fit-content;
+        padding: 8px;
+      }
+      @media (max-width :767px){
+        width: 100%;
+      }
+      p{
+        font-size: 40px;
+        font-weight: 600;
+        margin-bottom: 0;
+        @media (max-width : 1200px){
+          font-size: 28px;
+        }
+      }
+    }
+    @media (max-width : 1200px){
+      padding: 18px;
+      span{
+        font-size: 18px;
+      }
+    }
+  }
+  @media (max-width : 600px){
+    .tab1 , .tab2{
+      height: fit-content;
+      gap: 8px;
+      h3{
+        font-size: 14px;
+      }
+      .numb{
+        .icon{
+          svg{
+            width: 47px;
+          }
+        }
+        p{
+          font-size: 25px;
+        }
+      }
+      span{
+        font-size: 14px;
+      }
+      .code{
+        width: 157px;
+        p{
+          font-size: 25px;
+          padding: 10px 0;
+        }
+      }
+    }
+  }
+  @media (max-width : 400px){
+    .tab1 , .tab2{
+      height: fit-content;
+      gap: 8px;
+      .numb{
+        .icon{
+          svg{
+            width: 47px;
+          }
+        }
+        p{
+          font-size: 25px;
+        }
+      }
+      span{
+        font-size: 12px;
+      }
+      .code{
+        width: 145px;
+        p{
+          font-size: 25px;
+          padding: 10px 0;
+        }
+      }
+    }
+  }
+}
+
+.athena-homepage{
+  color: #4EA7FF;
+  .content{
+    .first-sec{
+      padding-top: 58px;
+      h1{
+        font-size: 40px;
+        font-weight: 600;
+        margin-bottom: 44px;
+        width: fit-content;
+        background: linear-gradient(90.15deg, #33F3FF 0.13%, #8987FF 49.48%, #B843FF 99.87%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+      }
+      .cont{
+        display: flex;
+        flex-direction: row;
+        gap: 36px;
+        align-items: center;
+        width: 100%;
+        .image{
+          background: var(--athenahome-elemnts-background);
+          box-shadow: var(--athenahome-image-boxShadow);
+          border-radius: 20px;
+          width: 214px;
+          height: 214px;
+          margin: 0 auto;
+          position: relative;
+          padding: 28px 30px;
+          img{
+            object-fit: cover;
+            object-position: center;
+            border: 2px solid transparent;
+            background:  linear-gradient(90.15deg, #33F3FF 0.13%, #8987FF 49.48%, #B843FF 99.87%) border-box; /*3*/
+            filter: drop-shadow(0px 0px 5px rgba(78, 167, 255, 0.25));
+            border-radius: 112.5px;
+          }
+        }
+
+        .card{
+          display: flex;
+          flex-direction: row;
+          gap: 31px;
+          align-items: center;
+          padding: 31px 59px;
+          max-width: 496px;
+          border: none;
+          background: var(--athenahome-elemnts-background);
+          box-shadow: var(--athenahome-image-boxShadow);
+          border-radius: 12px;
+          height: 208px;
+          @media (max-width :991px){
+            max-width: unset;
+            width: 100%;
+            justify-content: center;
+          }
+          .icon{
+            max-width: 110px;
+          }
+          .text{
+            h4{
+              font-size: 25px;
+              font-weight: 700;
+              margin-bottom: 10px;
+              background: linear-gradient(90.15deg, #33F3FF 0.13%, #8987FF 49.48%, #B843FF 99.87%);
+              -webkit-background-clip: text;
+              -webkit-text-fill-color: transparent;
+              background-clip: text;
+              width: fit-content;
+            }
+            h5{
+              color: var(--athenahome-themes-text) !important;
+              font-size: 14px;
+              font-weight: 400;
+              margin-bottom: 16px;
+              max-width: 255px;
+            }
+            .submitBtn{
+              max-width: 180px;
+              margin-bottom: 0 ;
+            }
+          }
+          @media (max-width : 1200px){
+            padding: 18px 30px;
+          }
+        }
+      }
+      @media (max-width : 1200px){
+        .cont{
+          gap: 12px;
+          .image{
+            margin: 0;
+            height: 214px;
+            padding: 30px;
+            img{
+              object-fit: cover;
+            }
+          }
+        }
+      }
+      @media (max-width : 991px){
+        .cont{
+          flex-wrap: wrap;
+          justify-content: flex-start;
+          gap: 12px;
+          .image{
+            margin: 0;
+            // height: fit-content;
+            img{
+              // object-fit: contain;
+            }
+          }
+        }
+      }
+      @media (max-width : 600px){
+        h1{
+          font-size: 24px;
+          margin-bottom: 27px;
+        }
+        .cont{
+          justify-content: flex-start;
+          gap: 27px;
+          .card{
+            height: fit-content;
+            padding: 43px 40px;
+            width: 100%;
+            .icon{
+              max-width: 89px;
+            }
+            .text{
+              h4{
+                font-size: 20px;
+              }
+              h5{
+                font-size: 10px;
+                max-width: 175px;
+                line-height: 1.6;
+              }
+              button{
+                font-size: 20px;
+              }
+            }
+          }
+        }
+      }
+      @media (max-width : 400px){
+        .cont{
+          gap: 27px;
+
+          .card{
+            flex-wrap: wrap;
+            justify-content: center;
+            text-align: center;
+            .icon{
+              max-width:130px;
+            }
+            .text{
+              h4{
+                font-size: 25px;
+              }
+              h5{
+                font-size: 13px;
+                max-width: 250px;
+                line-height: 1.6;
+              }
+              button{
+                font-size: 20px;
+              }
+            }
+          }
+        }
+      }
+    }
+    hr{
+      margin: 69px 0;
+      width: 100%;
+      height: 2px;
+      background:linear-gradient(90.15deg, #33F3FF 100%, #8987FF 49.48%, #B843FF 99.87%);
+      @media (max-width : 500px){
+        display: none;
+      }
+    }
+  }
+}

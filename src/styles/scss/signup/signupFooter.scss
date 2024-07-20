@@ -1,0 +1,34 @@
+// ----------------------------------------------------------------------------------------------------------------------
+// --------------------------------------------------------signupfooter--------------------------------------------------
+// ----------------------------------------------------------------------------------------------------------------------
+.signup-footer{
+  margin-top: 150px;
+  color: #fff;
+  h6{
+    display: flex;
+    flex-direction: row;
+    gap: 13px;
+    align-items: center;
+    .icon{
+      max-width: 33px;
+      height: 33px;
+    }
+    font-size: 14px;
+    font-weight: 400;
+    margin-bottom: 0;
+  }
+  @media (max-width : 600px){
+    margin-top: 80px;
+    h6{
+      flex-direction: column;
+      justify-content: center;
+      font-size: 10px;
+      gap: 23px;
+      .icon{
+        width: 63px;
+        height: fit-content;
+        max-width: unset;
+      }
+    }
+  }
+}

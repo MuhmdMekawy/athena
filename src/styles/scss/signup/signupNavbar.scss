@@ -1,0 +1,33 @@
+// ---------------------------------------------------------------------------------------------
+// -------------------------------------signupnavbar--------------------------------------------
+// ---------------------------------------------------------------------------------------------
+.SignUpNavbar{
+  .container{
+    padding: 45px 17px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap: 15px;
+    .logo{
+      max-width: 390px;
+      @media (max-width : 600px){
+        max-width: 200px;
+      }
+      svg{
+        width: 100%;
+      }
+    }
+  }
+  .Backbutton{
+    @media (max-width : 600px){
+      svg{
+        max-width: 30px;
+      }
+    }
+  }
+  svg{
+    fill: var(--text-in-light-dark) !important;
+  }
+}

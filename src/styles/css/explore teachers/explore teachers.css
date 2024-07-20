@@ -1,0 +1,97 @@
+a {
+  color: unset;
+  text-decoration: unset;
+}
+
+.explore-teachers .content {
+  margin-top: 25px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 34px 1fr 34px 1fr 34px 1fr 34px 1fr 34px 1fr 34px 1fr;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 34px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 48px 46px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border-radius: 11px;
+  background: linear-gradient(134deg, rgba(94, 216, 255, 0.05) 0%, rgba(132, 144, 255, 0.05) 47.92%, rgba(192, 90, 255, 0.05) 100%);
+  border: 2px dashed;
+}
+.explore-teachers .content .cont {
+  min-height: 135px;
+  height: 100%;
+  position: relative;
+  background: #D13200;
+  border-radius: 10px;
+}
+.explore-teachers .content .cont .image {
+  position: absolute;
+  right: 14px;
+  top: 14px;
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  text-align: end;
+  overflow: hidden;
+}
+.explore-teachers .content .cont .image img {
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.explore-teachers .content .cont .text {
+  position: absolute;
+  left: 14px;
+  bottom: 14px;
+}
+.explore-teachers .content .cont .text h4 {
+  color: #fff;
+  font-size: 10px;
+  font-weight: 300;
+  margin-bottom: 8px;
+}
+.explore-teachers .content .cont .text h5 {
+  color: #fff;
+  font-size: 14px;
+  font-weight: 700;
+  margin-bottom: 0;
+}
+.explore-teachers .content .cont.explore {
+  background: linear-gradient(133.89deg, #33F3FF 0%, #8987FF 47.92%, #B843FF 100%);
+  color: #fff;
+}
+.explore-teachers .content .cont.explore h1 {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  font-size: 25px;
+  font-weight: 400;
+  margin-bottom: 0;
+}
+@media (max-width: 1200px) {
+  .explore-teachers .content {
+    gap: 7px;
+    padding: 30px 9px;
+  }
+}
+@media (max-width: 992px) {
+  .explore-teachers .content {
+    -ms-grid-columns: 1fr 7px 1fr 7px 1fr;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 7px;
+    padding: 30px 9px;
+  }
+}
+@media (max-width: 450px) {
+  .explore-teachers .content {
+    -ms-grid-columns: 1fr 15px 1fr;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+    padding: 20px 15px;
+  }
+}
